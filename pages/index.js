@@ -10,8 +10,8 @@ export default function Home() {
         <section className="min-h-screen flex items-center justify-center px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
             <FadeIn duration={0.6}>
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-                ABANZOFT
+              <h1 className="text-5xl lg:text-7xl font-bold text-primary mb-6 tracking-tight">
+                <img src="/images/logo.png" alt="ABANZOFT" className="w-1/2 mx-auto" />
               </h1>
             </FadeIn>
             <FadeIn delay={0.2} duration={0.6}>
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <FadeIn>
               <div className="max-w-3xl mx-auto text-center mb-20">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
                   ABANZOFT en Números
                 </h2>
                 <p className="text-xl text-gray-600">
@@ -49,29 +49,29 @@ export default function Home() {
 
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
               <StaggerItem>
-                <div className="text-6xl lg:text-7xl font-bold text-gray-900 mb-3">40+</div>
+                <div className="text-6xl lg:text-7xl font-bold text-primary mb-3">40+</div>
                 <div className="text-lg text-gray-600">Clientes</div>
               </StaggerItem>
 
               <StaggerItem>
-                <div className="text-6xl lg:text-7xl font-bold text-gray-900 mb-3">15+</div>
+                <div className="text-6xl lg:text-7xl font-bold text-primary mb-3">15+</div>
                 <div className="text-lg text-gray-600">Sistemas Desarrollados</div>
               </StaggerItem>
 
               <StaggerItem>
-                <div className="text-6xl lg:text-7xl font-bold text-gray-900 mb-3">15+</div>
+                <div className="text-6xl lg:text-7xl font-bold text-primary mb-3">15+</div>
                 <div className="text-lg text-gray-600">Páginas Web</div>
               </StaggerItem>
 
               <StaggerItem>
-                <div className="text-6xl lg:text-7xl font-bold text-gray-900 mb-3">3</div>
+                <div className="text-6xl lg:text-7xl font-bold text-primary mb-3">3</div>
                 <div className="text-lg text-gray-600">Años de Operación</div>
               </StaggerItem>
             </StaggerContainer>
 
             <FadeIn delay={0.3}>
               <div className="mt-16 text-center">
-                <p className="text-2xl text-gray-900 font-semibold mb-2">
+                <p className="text-2xl text-primary font-semibold mb-2">
                   $100,000 - $125,000 mensuales
                 </p>
                 <p className="text-lg text-gray-600">
@@ -87,7 +87,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <FadeIn>
               <div className="max-w-3xl mx-auto text-center mb-20">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
                   Qué Hacemos
                 </h2>
                 <p className="text-xl text-gray-600">
@@ -102,11 +102,11 @@ export default function Home() {
                 <ScrollReveal>
                   <div className="text-center">
                     <FloatingElement delay={0}>
-                      <div className="w-16 h-16 bg-gray-900 rounded-lg mx-auto mb-6 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-primary rounded-lg mx-auto mb-6 flex items-center justify-center">
                         <Settings className="w-8 h-8 text-white" />
                       </div>
                     </FloatingElement>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl font-semibold text-primary mb-3">
                       Sistemas a Medida
                     </h3>
                     <p className="text-gray-600">
@@ -121,11 +121,11 @@ export default function Home() {
                 <ScrollReveal>
                   <div className="text-center">
                     <FloatingElement delay={0.2}>
-                      <div className="w-16 h-16 bg-gray-900 rounded-lg mx-auto mb-6 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-primary rounded-lg mx-auto mb-6 flex items-center justify-center">
                         <Globe className="w-8 h-8 text-white" />
                       </div>
                     </FloatingElement>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl font-semibold text-primary mb-3">
                       Desarrollo Web
                     </h3>
                     <p className="text-gray-600">
@@ -140,11 +140,11 @@ export default function Home() {
                 <ScrollReveal>
                   <div className="text-center">
                     <FloatingElement delay={0.4}>
-                      <div className="w-16 h-16 bg-gray-900 rounded-lg mx-auto mb-6 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-primary rounded-lg mx-auto mb-6 flex items-center justify-center">
                         <Lightbulb className="w-8 h-8 text-white" />
                       </div>
                     </FloatingElement>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl font-semibold text-primary mb-3">
                       Soluciones Digitales
                     </h3>
                     <p className="text-gray-600">
@@ -163,7 +163,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <FadeIn>
               <div className="max-w-3xl mx-auto text-center mb-20">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
                   Nuestro Recorrido
                 </h2>
                 <p className="text-xl text-gray-600">
@@ -175,8 +175,8 @@ export default function Home() {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <StaggerItem>
                 <div className="bg-white p-8 rounded-lg">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">2022</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <div className="text-3xl font-bold text-primary mb-2">2022</div>
+                  <h3 className="text-xl font-semibold text-primary mb-3">
                     Fundación
                   </h3>
                   <p className="text-gray-600">
@@ -188,8 +188,8 @@ export default function Home() {
 
               <StaggerItem>
                 <div className="bg-white p-8 rounded-lg">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">2023</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <div className="text-3xl font-bold text-primary mb-2">2023</div>
+                  <h3 className="text-xl font-semibold text-primary mb-3">
                     Primeros Ingresos
                   </h3>
                   <p className="text-gray-600">
@@ -201,8 +201,8 @@ export default function Home() {
 
               <StaggerItem>
                 <div className="bg-white p-8 rounded-lg">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">2025</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <div className="text-3xl font-bold text-primary mb-2">2025</div>
+                  <h3 className="text-xl font-semibold text-primary mb-3">
                     Consolidación
                   </h3>
                   <p className="text-gray-600">
@@ -221,7 +221,7 @@ export default function Home() {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <StaggerItem>
                 <div className="bg-gray-50 p-10 rounded-lg h-full flex flex-col">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-primary mb-4">
                     Conoce Nuestra Historia
                   </h3>
                   <p className="text-gray-600 mb-6 flex-grow">
@@ -236,7 +236,7 @@ export default function Home() {
 
               <StaggerItem>
                 <div className="bg-gray-50 p-10 rounded-lg h-full flex flex-col">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-primary mb-4">
                     Los Números Completos
                   </h3>
                   <p className="text-gray-600 mb-6 flex-grow">
@@ -251,7 +251,7 @@ export default function Home() {
 
               <StaggerItem>
                 <div className="bg-gray-50 p-10 rounded-lg h-full flex flex-col">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-primary mb-4">
                     Nuestras Soluciones
                   </h3>
                   <p className="text-gray-600 mb-6 flex-grow">
@@ -266,7 +266,7 @@ export default function Home() {
 
               <StaggerItem>
                 <div className="bg-gray-50 p-10 rounded-lg h-full flex flex-col">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-primary mb-4">
                     Visión 2.0
                   </h3>
                   <p className="text-gray-600 mb-6 flex-grow">

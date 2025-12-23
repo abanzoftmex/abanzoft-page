@@ -13,8 +13,8 @@ export default function AnimatedButton({
   const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-lg font-medium transition-colors';
   
   const variants = {
-    primary: 'bg-gray-900 text-white hover:bg-gray-800',
-    secondary: 'border border-gray-300 text-gray-900 hover:bg-gray-50'
+    primary: 'bg-secondary text-white hover:opacity-90',
+    secondary: 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;
