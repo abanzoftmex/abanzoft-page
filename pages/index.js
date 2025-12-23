@@ -282,23 +282,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-32 px-6 lg:px-8 bg-gray-900 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <FadeIn>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                ¿Tienes un proyecto en mente?
-              </h2>
-              <p className="text-xl text-gray-300 mb-10">
-                Hablemos sobre cómo podemos ayudarte a construir la solución digital
-                que tu negocio necesita.
-              </p>
-              <AnimatedButton href="/contacto" variant="primary">
-                Iniciar Conversación
-              </AnimatedButton>
-            </FadeIn>
-          </div>
-        </section>
+    
       </div>
     </div>
   );

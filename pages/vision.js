@@ -1,279 +1,275 @@
-import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, ParticleBackground, FloatingElement, ScrollReveal } from '@/components/animations';
+import Layout from '../components/Layout';
+import { 
+  FaRocket, 
+  FaGlobe, 
+  FaUsers, 
+  FaClock, 
+  FaStar, 
+  FaChartLine, 
+  FaBullseye, 
+  FaLightbulb,
+  FaHandshake,
+  FaAward,
+  FaShieldAlt,
+  FaMoneyBillWave,
+  FaBuilding
+} from 'react-icons/fa';
 
 export default function Vision() {
   return (
-    <div className="bg-white relative">
-      <ParticleBackground density={30} color="rgba(0, 0, 0, 0.04)" />
-      {/* Hero Section */}
-      <div className="relative z-10">
-        <section className="py-24 px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <FadeIn>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Visión 2.0
-              </h1>
-              <p className="text-xl text-gray-600">
-                Consolidación, expansión y la plataforma integral de Reinos de México
+    <Layout>
+      <div className="bg-white">
+        {/* Hero - Pantalla 1 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <FaRocket className="text-6xl mx-auto mb-6 text-blue-500" />
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6">
+              Visión 2.0
+            </h1>
+            <p className="text-xl lg:text-2xl text-gray-300 mb-8">
+              Consolidación, expansión y la plataforma integral de Reinos de México
+            </p>
+            <div className="flex items-center justify-center gap-4 text-lg text-gray-400">
+              <FaClock className="text-xl" />
+              <span>El futuro comienza ahora</span>
+            </div>
+          </div>
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </section>
+
+        {/* ABANZOFT 2.0 - Pantalla 2 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-white">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="text-center mb-10">
+              <FaLightbulb className="text-5xl mx-auto mb-4 text-blue-600" />
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                ABANZOFT 2.0
+              </h2>
+              <div className="h-1 w-24 bg-blue-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  En ABANZOFT estamos conscientes y agradecidos de todo el trabajo realizado y la experiencia aprendida en estos <span className="font-bold text-blue-600">3 años</span> de la mano de Universo aBanza, Val'Quirico y Reinos de México.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Creemos en el crecimiento y la mejora continua. Nuestra misión: tener para el cierre del <span className="font-bold text-blue-600">2025 y todo el 2026</span>, un ABANZOFT más sólido, actualizado y diversificado.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-blue-600 p-8 rounded-xl text-center shadow-lg">
+              <FaBullseye className="text-4xl mx-auto mb-3 text-white" />
+              <p className="text-2xl font-bold text-white">
+                Objetivo Principal: Consolidar ABANZOFT y expandirnos al mercado externo
               </p>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* ABANZOFT 2.0 Introduction */}
-        <section className="py-24 px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-5xl mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                ACCIONES ABANZOFT 2.0
-              </h2>
-            </FadeIn>
-
-            <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
-              <FadeIn delay={0.1}>
-                <p>
-                  En ABANZOFT estamos conscientes y agradecidos de todo el trabajo realizado y la experiencia aprendida en estos 3 años de la mano de Universo aBanza, Val 'Quirico y Reinos de México. Así mismo, creemos en el crecimiento y la mejora continua, por lo que, nuestra misión será tener para el cierre del 2025 y todo el 2026, un ABANZOFT más sólido, actualizado y diversificado.
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <p className="text-xl font-semibold text-gray-900">
-                  Nuestro objetivo principal es consolidar a ABANZOFT y expandirnos al mercado externo.
-                </p>
-              </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* ¿Qué haremos? */}
-        <section className="py-24 px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                ¿Qué haremos? Nuestras mejoras incluyen, tener:
+        {/* Mejoras - Pantalla 3 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-gray-50">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="text-center mb-10">
+              <FaStar className="text-5xl mx-auto mb-4 text-blue-600" />
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+                Nuestras Mejoras
               </h2>
-            </FadeIn>
+              <p className="text-xl text-gray-600">¿Qué haremos?</p>
+            </div>
 
-            <StaggerContainer className="space-y-4">
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Mejor imagen corporativa, operativa, legal y administrativa.</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { icon: FaBuilding, text: 'Mejor imagen corporativa, operativa, legal y administrativa' },
+                { icon: FaUsers, text: 'Más y mejor talento de equipo' },
+                { icon: FaStar, text: 'Mejor calidad de servicios y proyectos digitales' },
+                { icon: FaClock, text: 'Mejores tiempos de entrega' },
+                { icon: FaHandshake, text: 'Más atención y seguimiento de clientes' },
+                { icon: FaGlobe, text: 'Más clientes, mercados y proyectos nuevos' }
+              ].map((item, index) => (
+                <div key={index} className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-blue-500">
+                  <item.icon className="text-3xl mb-3 text-blue-600" />
+                  <p className="text-base text-gray-700">{item.text}</p>
                 </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Más y mejor talento de equipo.</span>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Mejor calidad de servicios y proyectos digitales.</span>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Mejores tiempos de entrega.</span>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Más atención y seguimiento de nuestros clientes.</span>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="flex items-start bg-gray-50 p-6 rounded-lg">
-                  <svg className="w-6 h-6 text-gray-900 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-lg">Más clientes, mercados y proyectos nuevos.</span>
-                </div>
-              </StaggerItem>
-            </StaggerContainer>
-          </div>
-        </section>
-
-        {/* Acciones 2026 */}
-        <section className="py-24 px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-6xl mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-12">
-                ACCIONES ABANZOFT 2.0 2026
-              </h2>
-            </FadeIn>
-
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Página Web</h3>
-                  <p className="text-gray-700">www.abanzoft.com</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Redes Sociales</h3>
-                  <p className="text-gray-700">Creación de contenido y lanzamiento oficial. (Instagram y Facebook, tener un Community Manager).</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Catálogo Digital</h3>
-                  <p className="text-gray-700">De nuestros Servicios Digitales (Descarga del PDF).</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Equipo de Apoyo</h3>
-                  <div className="text-gray-700 space-y-2">
-                    <p>Contrataciones nuevas en el área de desarrollo.</p>
-                    <p>La contratación formal de Juan Hernández en el área de programación.</p>
-                    <p>La contratación formal de Gabriel Hernández en el área de programación.</p>
-                    <p>Contratar en el área de diseño. (Pendiente)</p>
-                    <p>Contratar en el área administrativa. (Pendiente)</p>
-                  </div>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Administración y Contabilidad</h3>
-                  <p className="text-gray-700">Contratar al nuevo departamento de Giros (Germán).</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Ventas</h3>
-                  <p className="text-gray-700">Clientes y mercados nuevos. Se están cerrando más clientes externos con nuevos proyectos.</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="bg-white p-8 rounded-lg h-full">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Equipo de Vendedores</h3>
-                  <p className="text-gray-700">A Comisión. Programado para septiembre 2025 (Estudiantes de universidad, personas interesadas).</p>
-                </div>
-              </StaggerItem>
-            </StaggerContainer>
-          </div>
-        </section>
-
-        {/* Plataforma Reinos de México */}
-        <section className="py-24 px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                PLATAFORMA INTEGRAL: REINOS DE MÉXICO
-              </h2>
-            </FadeIn>
-
-            <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
-              <FadeIn delay={0.1}>
-                <p>
-                  ABANZOFT pretende realizar la plataforma oficial de REINOS DE MÉXICO. Esta plataforma tiene el objetivo de ser implementada y usada en cada uno de los Reinos, ya que ésta, tendrá de manera integral, unidos y conectados todos los sistemas y módulos principales que hoy en día se han realizado para Val 'Quirico y Universo aBanza, que hoy funcionan de manera separada e individual.
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <p>
-                  Esta plataforma compartirá: módulos, funciones, procesos, actividades, usuarios, información, data, imágenes y reportes, en un solo y mismo lugar. Para su correcto funcionamiento y seguridad, se crearán y generarán distintos tipos de usuarios, accesos y permisos que permitirá realizar distintas actividades y funciones dentro de la plataforma, pero de manera segura y controlada.
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.3}>
-                <p>
-                  Esta plataforma tendrá como base principal el Sistema INSULAE (Condominal).
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.4}>
-                <p className="font-semibold text-gray-900">
-                  Meta y objetivo: Que a finales del 2025 o principios del 2026 podamos estar empezando a implementar la primera fase de la plataforma para el segundo Reino de México: SASSI DEL VALLE.
-                </p>
-              </FadeIn>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Fondeo de la Plataforma */}
-        <section className="py-24 px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-5xl mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                FONDEO DE LA PLATAFORMA: REINOS DE MÉXICO
+        {/* Acciones 2026 - Pantalla 4 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-white">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="text-center mb-10">
+              <FaChartLine className="text-5xl mx-auto mb-4 text-blue-600" />
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+                Acciones 2026
               </h2>
-            </FadeIn>
+              <div className="h-1 w-32 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaGlobe className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Página Web</h3>
+                <p className="text-sm text-gray-600">www.abanzoft.com</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaUsers className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Redes Sociales</h3>
+                <p className="text-sm text-gray-600">Instagram, Facebook, Community Manager</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaAward className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Catálogo Digital</h3>
+                <p className="text-sm text-gray-600">Servicios Digitales (PDF)</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaUsers className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Equipo de Apoyo</h3>
+                <p className="text-sm text-gray-600">Juan, Gabriel, Diseño, Administrativa</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaMoneyBillWave className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Administración</h3>
+                <p className="text-sm text-gray-600">Departamento de Giros</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+                <FaHandshake className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Ventas</h3>
+                <p className="text-sm text-gray-600">Clientes externos nuevos</p>
+              </div>
+
+              <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm md:col-span-2">
+                <FaChartLine className="text-3xl mb-3 text-blue-600" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Equipo de Vendedores</h3>
+                <p className="text-sm text-gray-600">A Comisión - Septiembre 2025</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Plataforma Reinos - Pantalla 5 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-gray-900 text-white">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="text-center mb-8">
+              <FaBuilding className="text-6xl mx-auto mb-4 text-blue-500" />
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+                Plataforma Integral
+              </h2>
+              <p className="text-2xl text-blue-400">REINOS DE MÉXICO</p>
+            </div>
 
             <div className="space-y-6">
-              <FadeIn delay={0.1}>
-                <div className="bg-white p-8 rounded-lg">
-                  <p className="text-gray-700 leading-relaxed">
-                    ABANZOFT le pedirá a Reinos de México cubrir una cuota mensual para cada Reino en donde se implemente dicha plataforma.
-                  </p>
-                </div>
-              </FadeIn>
+              <div className="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <p className="text-base text-gray-300 leading-relaxed mb-4">
+                  ABANZOFT pretende realizar la <span className="font-bold text-blue-400">plataforma oficial de REINOS DE MÉXICO</span>. Esta plataforma será implementada en cada uno de los Reinos, uniendo todos los sistemas y módulos de manera integral.
+                </p>
+                <p className="text-base text-gray-300 leading-relaxed">
+                  Compartirá: <span className="text-blue-400">módulos, funciones, procesos, actividades, usuarios, información, data, imágenes y reportes</span> en un solo lugar.
+                </p>
+              </div>
 
-              <FadeIn delay={0.2}>
-                <div className="bg-white p-8 rounded-lg">
-                  <p className="text-gray-700 leading-relaxed">
-                    Cada Unidad o Cliente que use la plataforma deberá cubrir una renta o licencia justa por uso del sistema o módulo que tenga a su cargo dentro de la Plataforma.
-                  </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-blue-600 p-6 rounded-xl">
+                  <FaShieldAlt className="text-4xl mb-3" />
+                  <h3 className="text-xl font-bold mb-2">Seguridad</h3>
+                  <p className="text-sm">Distintos tipos de usuarios, accesos y permisos controlados</p>
                 </div>
-              </FadeIn>
 
-              <FadeIn delay={0.3}>
-                <div className="bg-white p-8 rounded-lg">
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    <strong className="text-gray-900">Punto importante:</strong> Reinos de México será el dueño absoluto en todo sentido de: la data, la información, los accesos, los usuarios, los permisos, los sistemas, los módulos, etc.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong className="text-gray-900">Responsabilidad:</strong> ABANZOFT será el responsable de ir mejorando, actualizando y detallando las funcionalidades de la plataforma.
-                  </p>
+                <div className="bg-blue-600 p-6 rounded-xl">
+                  <FaBuilding className="text-4xl mb-3" />
+                  <h3 className="text-xl font-bold mb-2">Base Principal</h3>
+                  <p className="text-sm">Sistema INSULAE (Condominal)</p>
                 </div>
-              </FadeIn>
+              </div>
+
+              <div className="bg-blue-600 p-6 rounded-xl text-center">
+                <FaBullseye className="text-5xl mx-auto mb-3 text-white" />
+                <p className="text-xl font-bold text-white mb-2">
+                  Meta: Finales 2025 / Principios 2026
+                </p>
+                <p className="text-base text-blue-100">
+                  Primera fase para el segundo Reino: <span className="font-bold">SASSI DEL VALLE</span>
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-24 px-6 lg:px-8 bg-gray-900 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <FadeIn>
-              <h2 className="text-4xl font-bold mb-6">
-                Únete a nuestra visión
+        {/* Fondeo - Pantalla 6 */}
+        <section className="h-screen sticky top-0 flex items-center justify-center bg-gray-50">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="text-center mb-10">
+              <FaMoneyBillWave className="text-6xl mx-auto mb-4 text-blue-600" />
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+                Modelo de Fondeo
               </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Estamos construyendo el futuro de las soluciones digitales para Reinos de México.
-                Contáctanos para ser parte de esta transformación.
-              </p>
-              <AnimatedButton href="/contacto" variant="primary">
-                Contactar
-              </AnimatedButton>
-            </FadeIn>
+              <p className="text-xl text-gray-600">Plataforma Reinos de México</p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold mb-3 text-blue-600">Cuota Mensual por Reino</h3>
+                <p className="text-base text-gray-700">ABANZOFT solicitará una cuota mensual para cada Reino donde se implemente la plataforma</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold mb-3 text-blue-600">Licencias por Usuario</h3>
+                <p className="text-base text-gray-700">Cada Unidad o Cliente cubrirá una renta justa por uso del sistema o módulo asignado</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-blue-600 text-white p-6 rounded-xl">
+                  <FaShieldAlt className="text-4xl mb-3" />
+                  <h3 className="text-xl font-bold mb-2">Propiedad</h3>
+                  <p className="text-sm"><span className="font-bold">Reinos de México</span> será el dueño absoluto de: data, información, accesos, usuarios, permisos, sistemas y módulos</p>
+                </div>
+
+                <div className="bg-gray-900 text-white p-6 rounded-xl">
+                  <FaRocket className="text-4xl mb-3" />
+                  <h3 className="text-xl font-bold mb-2">Responsabilidad</h3>
+                  <p className="text-sm"><span className="font-bold">ABANZOFT</span> será responsable de mejorar, actualizar y detallar las funcionalidades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Final - Pantalla 7 */}
+        <section className="h-screen flex items-center justify-center bg-gray-900 text-white">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <FaHandshake className="text-7xl mx-auto mb-6 text-blue-500" />
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              Únete a Nuestra Visión
+            </h2>
+            <p className="text-xl lg:text-2xl text-gray-300 mb-10 leading-relaxed">
+              Estamos construyendo el futuro de las soluciones digitales para Reinos de México.
+              <br />
+              <span className="text-blue-400 font-semibold">Contáctanos para ser parte de esta transformación.</span>
+            </p>
+            <a 
+              href="/contacto"
+              className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all shadow-xl hover:shadow-2xl"
+            >
+              <FaRocket className="text-2xl" />
+              Contactar Ahora
+            </a>
           </div>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 }
