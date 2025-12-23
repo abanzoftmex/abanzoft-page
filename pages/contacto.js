@@ -1,19 +1,26 @@
+import Layout from '@/components/Layout';
 import { FadeIn, StaggerContainer, StaggerItem, MouseFollowParticles, ParticleBackground } from '@/components/animations';
 
 export default function Contacto() {
   return (
+    <Layout>
     <div className="bg-white relative">
       <MouseFollowParticles density={15} />
       <ParticleBackground density={20} color="rgba(147, 51, 234, 0.3)" />
       {/* Hero Section */}
       <div className="relative z-10">
-        <section className="py-24 px-6 lg:px-8">
+        <section 
+          className="py-24 px-6 lg:px-8"
+          style={{
+            backgroundImage: 'radial-gradient(ellipse at 90% 30%, #3258b1 20%, rgb(26 33 53 / 20%) 50%), radial-gradient(ellipse at 70% 0%, #153d8c 0%, rgb(45 56 107) 50%), radial-gradient(ellipse at 20% 10%, #3258b1 10%, rgb(51 89 178) 70%), radial-gradient(ellipse at 50% 100%, #5b72a3 0%, rgb(50 89 178) 50%)'
+          }}
+        >
           <div className="max-w-4xl mx-auto text-center">
             <FadeIn>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
                 [Título: Hablemos]
               </h1>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-200">
                 [Descripción del contacto]
               </p>
             </FadeIn>
@@ -194,5 +201,6 @@ export default function Contacto() {
         </section>
       </div>
     </div>
+    </Layout>
   );
 }

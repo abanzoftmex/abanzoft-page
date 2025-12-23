@@ -1,19 +1,26 @@
+import Layout from '@/components/Layout';
 import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, CodeParticles } from '@/components/animations';
 import { Grid3x3, TrendingUp, Link, Monitor, WifiOff, Users, Brain, Database, BarChart2 } from 'lucide-react';
 
 export default function Soluciones() {
   return (
+    <Layout>
     <div className="bg-white relative">
       <CodeParticles density={30} />
       {/* Hero Section */}
       <div className="relative z-10">
-        <section className="py-24 px-6 lg:px-8">
+        <section 
+          className="py-24 px-6 lg:px-8"
+          style={{
+            backgroundImage: 'radial-gradient(ellipse at 90% 30%, #3258b1 20%, rgb(26 33 53 / 20%) 50%), radial-gradient(ellipse at 70% 0%, #153d8c 0%, rgb(45 56 107) 50%), radial-gradient(ellipse at 20% 10%, #3258b1 10%, rgb(51 89 178) 70%), radial-gradient(ellipse at 50% 100%, #5b72a3 0%, rgb(50 89 178) 50%)'
+          }}
+        >
           <div className="max-w-4xl mx-auto text-center">
             <FadeIn>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
                 Nuestras Soluciones
               </h1>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-200">
                 Servicios digitales genéricos, escalables e interconectables diseñados para tu negocio
               </p>
             </FadeIn>
@@ -24,7 +31,7 @@ export default function Soluciones() {
         <section className="py-24 px-6 lg:px-8 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="text-3xl font-bold text-primary mb-12 text-center">
                 EXPERIENCIA DEL USUARIO: MEJORES SERVICIOS DIGITALES
               </h2>
             </FadeIn>
@@ -32,90 +39,90 @@ export default function Soluciones() {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                     <Grid3x3 className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Genéricos y modulares</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Genéricos y modulares</h3>
                   <p className="text-gray-600">adaptables a cualquier giro de negocio.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Escalables</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Escalables</h3>
                   <p className="text-gray-600">pueden crecer y evolucionar junto con tu empresa.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                     <Link className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Interconectables</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Interconectables</h3>
                   <p className="text-gray-600">se integran con otras plataformas y servicios.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                     <Monitor className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Compatibles</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Compatibles</h3>
                   <p className="text-gray-600">funcionales en celular, laptop, tablet y desktop.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                     <WifiOff className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Offline</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Offline</h3>
                   <p className="text-gray-600">pueden operar sin conexión a internet.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                     <Users className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Multiusuario</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Multiusuario</h3>
                   <p className="text-gray-600">diferentes niveles de usuarios y permisos.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                     <Brain className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">IA Integrada</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">IA Integrada</h3>
                   <p className="text-gray-600">para automatizar tareas y tomar decisiones inteligentes.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                     <Database className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Exportación/importación de datos</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Exportación/importación de datos</h3>
                   <p className="text-gray-600">vía Excel.</p>
                 </div>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="bg-white p-6 rounded-lg h-full">
-                  <div className="w-12 h-12 bg-gray-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                     <BarChart2 className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Reportes dinámicos</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">Reportes dinámicos</h3>
                   <p className="text-gray-600">generales y específicos, en formato digital e impreso.</p>
                 </div>
               </StaggerItem>
@@ -127,7 +134,7 @@ export default function Soluciones() {
         <section className="py-24 px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="text-3xl font-bold text-primary mb-12 text-center">
                 COSTOS Y LEGAL
               </h2>
             </FadeIn>
@@ -135,12 +142,12 @@ export default function Soluciones() {
             <div className="space-y-12">
               <FadeIn delay={0.1}>
                 <div className="bg-gray-50 p-10 rounded-lg">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">
                     Modelo ABANZOFT: Accesible y Personalizado
                   </h3>
                   <div className="space-y-4 text-gray-700">
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-gray-900 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-secondary mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -148,7 +155,7 @@ export default function Soluciones() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-gray-900 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-secondary mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -156,7 +163,7 @@ export default function Soluciones() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-gray-900 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-secondary mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -164,7 +171,7 @@ export default function Soluciones() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-gray-900 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-secondary mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -177,7 +184,7 @@ export default function Soluciones() {
 
               <FadeIn delay={0.2}>
                 <div className="bg-gray-50 p-10 rounded-lg">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">
                     Legal
                   </h3>
                   <div className="space-y-6">
@@ -242,7 +249,7 @@ export default function Soluciones() {
         <section className="py-24 px-6 lg:px-8 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <FadeIn>
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="text-3xl font-bold text-primary mb-12 text-center">
                 SISTEMAS INVOLUCRADOS
               </h2>
             </FadeIn>
@@ -251,7 +258,7 @@ export default function Soluciones() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                 <div className="overflow-x-auto">
                   <table className="w-full">
-                    <thead className="bg-gray-900 text-white">
+                    <thead className="bg-primary text-white">
                       <tr>
                         <th className="px-6 py-4 text-left font-semibold">Categoría / Tipo de Sistema</th>
                         <th className="px-6 py-4 text-left font-semibold">Nombre del Sistema / Módulo</th>
@@ -260,79 +267,79 @@ export default function Soluciones() {
                     <tbody className="divide-y divide-gray-200">
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-condominal</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Insulae</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Insulae</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Inmobiliario-construcción</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Inmobiliario</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Inmobiliario</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-contable</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Luca</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Luca</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-entradas y salidas</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Salditos-punto de venta</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Salditos-punto de venta</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-membresías</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Membresías</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Membresías</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Servicio-evaluación de negocios</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Encuestas</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Encuestas</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-recursos humanos</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">RH-reloj checador</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">RH-reloj checador</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-pendientes y calendario</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Pendientódromo-calendario</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Pendientódromo-calendario</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-compras</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Pedidos-compras</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Pedidos-compras</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-rentas</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Rentas</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Rentas</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-reportes</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Reportes: giros y socios</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Reportes: giros y socios</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Servicio-plataforma de cursos</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Batallón elite</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Batallón elite</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Servicio-bolsa de trabajo</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Puesto ya</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Puesto ya</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-agua</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Administración del agua</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Administración del agua</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Servicio-compra de boletos-eventos</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Eventos y boletos</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Eventos y boletos</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-seguimiento de clientes</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">CRM</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">CRM</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Administrativo-cobranza</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Recibos de pago/cobro</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Recibos de pago/cobro</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Plataforma de venta en línea</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Pido a</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Pido a</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="px-6 py-4 text-gray-700">Mapa de navegación</td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">Mapa Val 'Quirico</td>
+                        <td className="px-6 py-4 font-semibold text-secondary">Mapa Val 'Quirico</td>
                       </tr>
                     </tbody>
                   </table>
@@ -346,7 +353,7 @@ export default function Soluciones() {
         <section className="py-24 px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <FadeIn>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-primary mb-6">
                 ¿Listo para comenzar?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
@@ -360,5 +367,6 @@ export default function Soluciones() {
         </section>
       </div>
     </div>
+    </Layout>
   );
 }

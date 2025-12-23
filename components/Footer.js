@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">ABANZOFT</h3>
+            <img src="logo.png" alt="ABANZOFT" className="w-1/2" />
             <p className="text-sm text-gray-600 leading-relaxed">
               Construyendo el futuro digital de México desde 2022.
             </p>
