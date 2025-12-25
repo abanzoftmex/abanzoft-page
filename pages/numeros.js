@@ -4,12 +4,12 @@ import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, Cart
 import DataCard from '@/components/DataCard';
 import CircularProgress from '@/components/CircularProgress';
 import AnimatedCounter from '@/components/AnimatedCounter';
-import { 
-  FaDollarSign, 
-  FaChartBar, 
-  FaStar, 
-  FaBullseye, 
-  FaRocket, 
+import {
+  FaDollarSign,
+  FaChartBar,
+  FaStar,
+  FaBullseye,
+  FaRocket,
   FaChartLine,
   FaChartPie,
   FaChartArea,
@@ -29,7 +29,7 @@ export default function Numeros() {
 
   const repartoData2025 = [
     { name: 'UA', value: 285614 },
-    { name: 'GAM', value: 190409 } 
+    { name: 'GAM', value: 190409 }
   ];
 
   const crecimientoData = [
@@ -56,132 +56,132 @@ export default function Numeros() {
   ];
 
   return (
-    <Layout>
-    <div className="bg-white relative min-h-screen">
-      <MoneyParticles density={15} />
-      
-      {/* Hero Section */}
-      <div className="relative z-10">
-        <section 
-          className="py-16 px-6 lg:px-8"
-          style={{
-            backgroundImage: 'radial-gradient(ellipse at 90% 30%, #3258b1 20%, rgb(26 33 53 / 20%) 50%), radial-gradient(ellipse at 70% 0%, #153d8c 0%, rgb(45 56 107) 50%), radial-gradient(ellipse at 20% 10%, #3258b1 10%, rgb(51 89 178) 70%), radial-gradient(ellipse at 50% 100%, #5b72a3 0%, rgb(50 89 178) 50%)'
-          }}
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            
+    <Layout hideFooter={true}>
+      <div className="bg-white relative min-h-screen">
+        <MoneyParticles density={15} />
+
+        {/* Hero Section */}
+        <div className="relative z-10">
+          <section
+            className="py-16 px-6 lg:px-8"
+            style={{
+              backgroundImage: 'radial-gradient(ellipse at 90% 30%, #3258b1 20%, rgb(26 33 53 / 20%) 50%), radial-gradient(ellipse at 70% 0%, #153d8c 0%, rgb(45 56 107) 50%), radial-gradient(ellipse at 20% 10%, #3258b1 10%, rgb(51 89 178) 70%), radial-gradient(ellipse at 50% 100%, #5b72a3 0%, rgb(50 89 178) 50%)'
+            }}
+          >
+            <div className="max-w-4xl mx-auto text-center">
+
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-4">
                 Los Números
               </h1>
               <p className="text-xl text-gray-200">
                 Dashboard Financiero 2023-2025
               </p>
-            
-          </div>
-        </section>
 
-        {/* Dashboard principal - Totales */}
-        <section className="py-12 px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
-            
+            </div>
+          </section>
+
+          {/* Dashboard principal - Totales */}
+          <section className="py-12 px-6 lg:px-8 bg-white">
+            <div className="max-w-7xl mx-auto">
+
               <h2 className="text-3xl font-bold text-primary mb-8 text-center">
                 Resumen Ejecutivo 2023-2025
               </h2>
-            
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <DataCard 
-                title="Ventas Totales"
-                value={2699750}
-                subtitle="Nov 2025"
-                icon={<FaDollarSign />}
-                color="primary"
-                delay={0}
-                trend={514}
-                fullOpacity={true}
-              />
-              <DataCard 
-                title="Gastos Totales"
-                value={1668150}
-                subtitle="Nov 2025"
-                icon={<FaChartBar />}
-                color="red"
-                delay={100}
-                fullOpacity={true}
-              />
-              <DataCard 
-                title="Utilidades"
-                value={1031600}
-                subtitle="Nov 2025"
-                icon={<FaStar />}
-                color="green"
-                delay={200}
-                trend={38}
-                fullOpacity={true}
-              />
-              <DataCard 
-                title="Utilidades UA"
-                value={621594}
-                subtitle="60% del total"
-                icon={<FaBullseye />}
-                color="primary"
-                delay={300}
-                fullOpacity={true}
-              />
-              <DataCard 
-                title="Utilidades GAM"
-                value={414395}
-                subtitle="40% del total"
-                icon={<FaRocket />}
-                color="secondary"
-                delay={400}
-                fullOpacity={true}
-              />
-              <DataCard 
-                title="Margen Utilidad"
-                value={38.2}
-                prefix=""
-                suffix="%"
-                subtitle="Promedio 3 años"
-                icon={<FaChartLine />}
-                color="cyan"
-                delay={500}
-                fullOpacity={true}
-              />
-            </div>
 
-            {/* Gráficos principales lado a lado */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Gráfico de barras comparativo */}
-              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <DataCard
+                  title="Ventas Totales"
+                  value={2699750}
+                  subtitle="Nov 2025"
+                  icon={<FaDollarSign />}
+                  color="primary"
+                  delay={0}
+                  trend={514}
+                  fullOpacity={true}
+                />
+                <DataCard
+                  title="Gastos Totales"
+                  value={1668150}
+                  subtitle="Nov 2025"
+                  icon={<FaChartBar />}
+                  color="red"
+                  delay={100}
+                  fullOpacity={true}
+                />
+                <DataCard
+                  title="Utilidades"
+                  value={1031600}
+                  subtitle="Nov 2025"
+                  icon={<FaStar />}
+                  color="green"
+                  delay={200}
+                  trend={38}
+                  fullOpacity={true}
+                />
+                <DataCard
+                  title="Utilidades UA"
+                  value={621594}
+                  subtitle="60% del total"
+                  icon={<FaBullseye />}
+                  color="primary"
+                  delay={300}
+                  fullOpacity={true}
+                />
+                <DataCard
+                  title="Utilidades GAM"
+                  value={414395}
+                  subtitle="40% del total"
+                  icon={<FaRocket />}
+                  color="secondary"
+                  delay={400}
+                  fullOpacity={true}
+                />
+                <DataCard
+                  title="Margen Utilidad"
+                  value={38.2}
+                  prefix=""
+                  suffix="%"
+                  subtitle="Promedio 3 años"
+                  icon={<FaChartLine />}
+                  color="cyan"
+                  delay={500}
+                  fullOpacity={true}
+                />
+              </div>
+
+              {/* Gráficos principales lado a lado */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Gráfico de barras comparativo */}
+
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                   <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
                     <FaChartPie className="mr-3 text-2xl text-secondary" />
                     Evolución Financiera
                   </h3>
                   <ResponsiveContainer width="100%" height={350}>
-                    <BarChart data={ventasData}>    
+                    <BarChart data={ventasData}>
                       <defs>
                         <linearGradient id="colorVentas" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9}/>
-                          <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6}/>
+                          <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6} />
                         </linearGradient>
                         <linearGradient id="colorGastos" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#ef4444" stopOpacity={0.9}/>
-                          <stop offset="95%" stopColor="#ef4444" stopOpacity={0.6}/>
+                          <stop offset="5%" stopColor="#ef4444" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#ef4444" stopOpacity={0.6} />
                         </linearGradient>
                         <linearGradient id="colorUtilidades" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.9}/>
-                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.6}/>
+                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.6} />
                         </linearGradient>
                       </defs>
                       <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                       <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
                       <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                      <Tooltip 
-                        contentStyle={{ 
-                          backgroundColor: 'rgba(255, 255, 255, 0.95)', 
-                          border: 'none', 
+                      <Tooltip
+                        contentStyle={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                          border: 'none',
                           borderRadius: '16px',
                           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
                           padding: '12px'
@@ -195,10 +195,10 @@ export default function Numeros() {
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
-              
 
-              {/* Gráfico de área - Crecimiento */}
-              
+
+                {/* Gráfico de área - Crecimiento */}
+
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                   <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
                     <FaChartArea className="mr-3 text-2xl text-secondary" />
@@ -208,53 +208,53 @@ export default function Numeros() {
                     <AreaChart data={crecimientoData}>
                       <defs>
                         <linearGradient id="colorCrecimiento" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.8}/>
-                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.1}/>
+                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
+                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.1} />
                         </linearGradient>
                       </defs>
                       <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                       <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
                       <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                      <Tooltip 
-                        contentStyle={{ 
-                          backgroundColor: 'rgba(255, 255, 255, 0.95)', 
-                          border: 'none', 
+                      <Tooltip
+                        contentStyle={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                          border: 'none',
                           borderRadius: '16px',
                           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
                           padding: '12px'
                         }}
                         formatter={(value) => `${value}%`}
                       />
-                      <Area 
-                        type="monotone" 
-                        dataKey="crecimiento" 
-                        stroke="#10b981" 
+                      <Area
+                        type="monotone"
+                        dataKey="crecimiento"
+                        stroke="#10b981"
                         strokeWidth={3}
-                        fillOpacity={1} 
-                        fill="url(#colorCrecimiento)" 
+                        fillOpacity={1}
+                        fill="url(#colorCrecimiento)"
                       />
                     </AreaChart>
                   </ResponsiveContainer>
                 </div>
-              
-            </div>
-          </div>
-        </section>
 
-        {/* Sección de Inversión y Recuperación */}
-        <section className="py-16 px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
-            
+              </div>
+            </div>
+          </section>
+
+          {/* Sección de Inversión y Recuperación */}
+          <section className="py-16 px-6 lg:px-8 bg-gray-50">
+            <div className="max-w-7xl mx-auto">
+
               <h2 className="text-3xl font-bold text-primary mb-10 text-center">
                 Estado de Inversión y Recuperación
               </h2>
-            
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-              {/* Progreso Circular */}
-              
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                {/* Progreso Circular */}
+
                 <div className="flex justify-center bg-white p-8 rounded-2xl shadow-lg">
-                  <CircularProgress 
+                  <CircularProgress
                     percentage={45.4}
                     size={260}
                     strokeWidth={20}
@@ -263,11 +263,11 @@ export default function Numeros() {
                     color="#10b981"
                   />
                 </div>
-              
 
-              {/* Detalles */}
-              <div className="lg:col-span-2 space-y-6">
-                
+
+                {/* Detalles */}
+                <div className="lg:col-span-2 space-y-6">
+
                   <div className="bg-white p-8 rounded-2xl shadow-lg">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
@@ -290,27 +290,27 @@ export default function Numeros() {
                       </div>
                     </div>
                   </div>
-                
 
-                
+
+
                   <div className="bg-white p-8 rounded-2xl shadow-lg">
                     <div className="text-sm text-gray-600 mb-4 uppercase tracking-wider">Estado de Inversión</div>
                     <ResponsiveContainer width="100%" height={250}>
                       <BarChart data={inversionData}>
                         <defs>
                           <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9}/>
-                            <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6}/>
+                            <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9} />
+                            <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6} />
                           </linearGradient>
                         </defs>
                         <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                         <XAxis dataKey="concepto" stroke="#6b7280" style={{ fontSize: '11px' }} angle={-15} textAnchor="end" height={60} />
                         <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                        <Tooltip 
+                        <Tooltip
                           formatter={(value) => `$${value.toLocaleString()}`}
-                          contentStyle={{ 
-                            backgroundColor: 'white', 
-                            border: '1px solid #e5e7eb', 
+                          contentStyle={{
+                            backgroundColor: 'white',
+                            border: '1px solid #e5e7eb',
                             borderRadius: '8px'
                           }}
                         />
@@ -332,23 +332,23 @@ export default function Numeros() {
                       </div>
                     </div>
                   </div>
-                
+
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Sección de Reparto 2025 */}
-        <section className="py-16 px-6 lg:px-8 bg-white">
-          <div className="max-w-6xl mx-auto">
-            
+          {/* Sección de Reparto 2025 */}
+          <section className="py-16 px-6 lg:px-8 bg-white">
+            <div className="max-w-6xl mx-auto">
+
               <h2 className="text-3xl font-bold text-primary mb-10 text-center">
                 Distribución de Utilidades 2025
               </h2>
-            
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
                 <div className="bg-gray-50 p-8 rounded-2xl shadow-lg">
                   <h3 className="text-lg font-bold text-primary mb-6 text-center">Reparto Proporcional</h3>
                   <ResponsiveContainer width="100%" height={320}>
@@ -380,21 +380,21 @@ export default function Numeros() {
                         <Cell fill="url(#uaGradient)" />
                         <Cell fill="url(#gamGradient)" />
                       </Pie>
-                      <Tooltip 
+                      <Tooltip
                         formatter={(value) => `$${value.toLocaleString()}`}
-                        contentStyle={{ 
-                          backgroundColor: 'white', 
-                          border: '1px solid #e5e7eb', 
+                        contentStyle={{
+                          backgroundColor: 'white',
+                          border: '1px solid #e5e7eb',
                           borderRadius: '8px'
                         }}
                       />
                     </PieChart>
                   </ResponsiveContainer>
                 </div>
-              
 
-              <div className="space-y-6">
-                
+
+                <div className="space-y-6">
+
                   <div className="bg-primary p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
                     <div className="flex items-center justify-between mb-3">
                       <div className="text-sm text-white uppercase tracking-wider">UA (60%)</div>
@@ -408,9 +408,9 @@ export default function Numeros() {
                       <div className="h-full bg-white rounded-full" style={{ width: '60%' }}></div>
                     </div>
                   </div>
-                
 
-                
+
+
                   <div className="bg-secondary p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
                     <div className="flex items-center justify-between mb-3">
                       <div className="text-sm text-white uppercase tracking-wider">GAM (40%)</div>
@@ -424,128 +424,13 @@ export default function Numeros() {
                       <div className="h-full bg-white rounded-full" style={{ width: '40%' }}></div>
                     </div>
                   </div>
-                
+
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Análisis de Mercado */}
-        <section className="py-16 px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
-            
-              <h2 className="text-3xl font-bold text-primary mb-10 text-center">
-                Análisis de Mercado
-              </h2>
-            
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* En Val'Quirico */}
-              
-                <div className="bg-white p-8 rounded-2xl shadow-lg h-full">
-                  <div className="flex items-center mb-6">
-                    <FaHome className="text-4xl mr-3 text-primary" />
-                    <h3 className="text-2xl font-bold text-primary">En Val'Quirico</h3>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-green-700 mb-4 flex items-center">
-                      <span className="mr-2">✅</span> Pros:
-                    </h4>
-                    <ul className="space-y-3">
-                      {[
-                        'Clientes cautivos',
-                        'Muchas necesidades y problemas que atender',
-                        'Círculo económico beneficioso',
-                        'Proyectos sirven de experiencia'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start group">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 group-hover:scale-150 transition-transform"></div>
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="text-lg font-semibold text-red-700 mb-4 flex items-center">
-                      <span className="mr-2">⚠️</span> Contras:
-                    </h4>
-                    <ul className="space-y-3">
-                      {[
-                        'Muchos responsables, muchas opiniones',
-                        'Quieren todo bueno, bonito y barato',
-                        'Pagos se atrasan mucho',
-                        'Sin contratos formales',
-                        'Dependencia económica del pueblo'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start group">
-                          <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 group-hover:scale-150 transition-transform"></div>
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              
-
-              {/* Clientes Externos */}
-              
-                <div className="bg-white p-8 rounded-2xl shadow-lg h-full">
-                  <div className="flex items-center mb-6">
-                    <FaGlobe className="text-4xl mr-3 text-secondary" />
-                    <h3 className="text-2xl font-bold text-primary">Clientes Externos</h3>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-green-700 mb-4 flex items-center">
-                      <span className="mr-2">✅</span> Pros:
-                    </h4>
-                    <ul className="space-y-3">
-                      {[
-                        'Muchos proyectos y clientes nuevos',
-                        'Pagan bien y a tiempo',
-                        'Replicar proyectos de Val\'Quirico',
-                        'Tiempos de entrega organizados',
-                        'Contratos formales',
-                        'Poder contratar más equipo'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start group">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 group-hover:scale-150 transition-transform"></div>
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
-                      <p className="text-sm text-primary italic">
-                        <strong>Nota:</strong> Formalizar ABANZOFT como persona moral = más y mejores proyectos
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-lg font-semibold text-red-700 mb-4 flex items-center">
-                      <span className="mr-2">⚠️</span> Contras:
-                    </h4>
-                    <ul className="space-y-3">
-                      {[
-                        'Saturación de proyectos',
-                        'Equipo de trabajo reducido'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start group">
-                          <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 group-hover:scale-150 transition-transform"></div>
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
     </Layout>
   );
 }

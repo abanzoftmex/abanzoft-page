@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Navbar() {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1.0] }}
@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/nosotros" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
-              Nosotros
+              Nuestra Historia
             </Link>
             <Link href="/soluciones" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
               Soluciones
