@@ -1,8 +1,10 @@
 import Layout from '@/components/Layout';
-import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, CodeParticles } from '@/components/animations';
-import { Grid3x3, TrendingUp, Link, Monitor, WifiOff, Users, Brain, Database, BarChart2 } from 'lucide-react';
+import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, CodeParticles, FloatingElement, CardCodeParticles, CardDesignParticles, CardWebParticles, CardShoppingParticles, CardMapParticles, CardMobileParticles, CardSocialParticles, CardAIParticles } from '@/components/animations';
+import { Grid3x3, TrendingUp, Link, Monitor, WifiOff, Users, Brain, Database, BarChart2, DollarSign, Home, UserCheck, ClipboardList, Video, ShoppingCart, Package, Megaphone, Ticket, IdCard, Calendar, Dumbbell, Droplet, Utensils, MapPin, Gift, Building2, Code, Palette, Globe, Smartphone, Share2, Sparkles } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Soluciones() {
+  const [hoveredCard, setHoveredCard] = useState(null);
   return (
     <Layout hideFooter={true}>
       <div className="bg-white relative">
@@ -27,6 +29,147 @@ export default function Soluciones() {
                   Creamos soluciones de software innovadoras y 100% adaptadas a cualquier tipo de negocio o empresa para que operar con máxima eficiencia y eficiencia, optimizando y automatizando procesos operativos, administrativos y comerciales.
                 </p>
               </FadeIn>
+            </div>
+          </section>
+
+          {/* Nuestras Áreas de Acción */}
+          <section className="py-24 px-6 lg:px-8 bg-white">
+            <div className="max-w-7xl mx-auto">
+              <FadeIn>
+                <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">
+                  Nuestras Áreas de Acción
+                </h2>
+              </FadeIn>
+
+              <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {/* Desarrollo de Software - Efecto de pulso */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('code')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardCodeParticles isHovered={hoveredCard === 'code'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:animate-pulse transition-all duration-500 relative z-10">
+                      <Code className="w-12 h-12 text-white group-hover:scale-110 transition-transform duration-300" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Desarrollo de Software</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Sistemas especializados en optimización de procesos.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Diseño Gráfico - Cambio de gradiente */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('design')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardDesignParticles isHovered={hoveredCard === 'design'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:from-pink-400 group-hover:to-orange-500 transition-all duration-700 relative z-10">
+                      <Palette className="w-12 h-12 text-white group-hover:scale-110 transition-transform duration-300" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Diseño Gráfico</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Porque la imagen lo es todo para tu negocio.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Páginas Web - Rotación del globo */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('web')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardWebParticles isHovered={hoveredCard === 'web'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 relative z-10">
+                      <Globe className="w-12 h-12 text-white group-hover:rotate-180 transition-transform duration-700" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Páginas Web</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Herramientas de posicionamiento en la web.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Plataformas de Pedidos - Bounce del carrito */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('shopping')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardShoppingParticles isHovered={hoveredCard === 'shopping'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 relative z-10">
+                      <ShoppingCart className="w-12 h-12 text-white group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Plataformas de Pedidos</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Sistema de ventas y comunicación entre tu negocio y tus clientes.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Mapas Interactivos - Expansión del mapa */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('map')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardMapParticles isHovered={hoveredCard === 'map'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 relative z-10">
+                      <MapPin className="w-12 h-12 text-white group-hover:scale-125 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Mapas Interactivos Personalizados</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Permite que tus clientes interactúen como nunca lo han hecho.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Aplicaciones Móviles - Vibración del teléfono */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('mobile')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardMobileParticles isHovered={hoveredCard === 'mobile'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 relative z-10">
+                      <Smartphone className="w-12 h-12 text-white group-hover:rotate-6 group-hover:-rotate-6 transition-transform duration-100" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Aplicaciones Móviles</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Una de las herramientas de interacción más poderosas del mercado.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* Redes Sociales - Efecto de compartir */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('social')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardSocialParticles isHovered={hoveredCard === 'social'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-500 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 relative z-10">
+                      <Share2 className="w-12 h-12 text-white group-hover:scale-125 group-hover:rotate-45 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Gestión de Redes Sociales y Marketing Digital</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Interactúa en las plataformas sociales más importantes y genera ventas.</p>
+                  </div>
+                </StaggerItem>
+
+                {/* IA - Efecto de brillo/sparkle */}
+                <StaggerItem>
+                  <div
+                    className="group bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col items-center text-center relative overflow-hidden"
+                    onMouseEnter={() => setHoveredCard('ai')}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <CardAIParticles isHovered={hoveredCard === 'ai'} />
+                    <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mb-6 flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:from-purple-400 group-hover:to-pink-500 transition-all duration-700 relative z-10">
+                      <Sparkles className="w-12 h-12 text-white group-hover:rotate-90 group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">Soluciones con Inteligencia Artificial</h3>
+                    <p className="text-gray-600 text-sm relative z-10">Todo el poder de la IA en cada solución personalizada.</p>
+                  </div>
+                </StaggerItem>
+              </StaggerContainer>
             </div>
           </section>
 
@@ -130,6 +273,179 @@ export default function Soluciones() {
                   </div>
                 </StaggerItem>
               </StaggerContainer>
+            </div>
+          </section>
+
+          {/* Sistemas Especializados */}
+          <section className="py-24 px-6 lg:px-8 bg-white">
+            <div className="max-w-7xl mx-auto">
+              <FadeIn>
+                <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+                  En nuestra trayectoria hemos desarrollado varios sistemas especializados.
+                </h2>
+              </FadeIn>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16 max-w-6xl mx-auto">
+                {/* Row 1 */}
+                <FloatingElement delay={0} duration={3}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <DollarSign className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Gestión administrativa y<br />contable</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.2} duration={3.5}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Home className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Inmobiliarias y condominios</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.4} duration={3.2}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <UserCheck className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Recursos Humanos</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.6} duration={3.8}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <ClipboardList className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Encuestas, cursos y<br />empleabilidad</p>
+                  </div>
+                </FloatingElement>
+
+                {/* Row 2 */}
+                <FloatingElement delay={0.8} duration={3.3}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Video className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Cursos en línea</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1} duration={3.6}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <ShoppingCart className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Compras y punto de venta</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1.2} duration={3.4}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Package className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Inventarios y logística</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1.4} duration={3.7}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Megaphone className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">CRM, cobranza y rentas</p>
+                  </div>
+                </FloatingElement>
+
+                {/* Row 3 */}
+                <FloatingElement delay={0.3} duration={3.9}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Ticket className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Eventos, boletaje y<br />contratación de artistas</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.5} duration={3.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <IdCard className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Membresías y gestión de<br />socios</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.7} duration={3.5}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Calendar className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Calendarios, pendientes y<br />agendas digitales</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={0.9} duration={3.2}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Dumbbell className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Administración de centros<br />deportivos</p>
+                  </div>
+                </FloatingElement>
+
+                {/* Row 4 */}
+                <FloatingElement delay={1.1} duration={3.8}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Droplet className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Control de agua y recursos</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1.3} duration={3.4}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Utensils className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Sistemas de hospedaje</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1.5} duration={3.6}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <MapPin className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Mapas digitales<br />interactivos</p>
+                  </div>
+                </FloatingElement>
+
+                <FloatingElement delay={1.7} duration={3.3}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <Gift className="w-10 h-10 text-gray-700" />
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">Plataformas de pedidos y<br />entregas</p>
+                  </div>
+                </FloatingElement>
+
+                {/* Row 5 - Centered */}
+                <div className="col-span-2 md:col-span-3 lg:col-span-4 flex justify-center">
+                  <FloatingElement delay={1.9} duration={3.7}>
+                    <div className="flex flex-col items-center text-center">
+                      <div className="w-24 h-24 rounded-full border-2 border-red-400 flex items-center justify-center mb-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <Building2 className="w-10 h-10 text-gray-700" />
+                      </div>
+                      <p className="text-sm font-medium text-gray-800">Soluciones para<br />construcción y diseño</p>
+                    </div>
+                  </FloatingElement>
+                </div>
+              </div>
             </div>
           </section>
 

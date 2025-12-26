@@ -11,5 +11,13 @@ export {
     MoneyParticles,
     CodeParticles,
     TimelineParticles,
-    MouseFollowParticles
+    MouseFollowParticles,
+    CardCodeParticles,
+    CardDesignParticles,
+    CardWebParticles,
+    CardShoppingParticles,
+    CardMapParticles,
+    CardMobileParticles,
+    CardSocialParticles,
+    CardAIParticles
 } from './ParticleEffects';
