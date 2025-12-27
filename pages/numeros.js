@@ -160,21 +160,21 @@ export default function Numeros() {
                   <FaDollarSign className="text-3xl text-white" />
                   Inversión Total Acumulada
                 </h3>
-                <div className="flex justify-center items-center gap-8">
+                <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
                   <div className="text-center">
                     <div className="text-lg text-white/80 mb-2">2022</div>
-                    <div className="text-3xl font-bold text-white">$560,000</div>
+                    <div className="text-2xl md:text-3xl font-bold text-white">$560,000</div>
                   </div>
-                  <div className="text-4xl text-white/60">+</div>
+                  <div className="text-3xl md:text-4xl text-white/60">+</div>
                   <div className="text-center">
                     <div className="text-lg text-white/80 mb-2">2023</div>
-                    <div className="text-3xl font-bold text-white">$810,000</div>
+                    <div className="text-2xl md:text-3xl font-bold text-white">$810,000</div>
                   </div>
-                  <div className="text-4xl text-white/60">=</div>
-                  <div className="text-center">
-                    <div className="bg-primary px-8 py-6 rounded-xl">
+                  <div className="text-3xl md:text-4xl text-white/60">=</div>
+                  <div className="text-center w-full md:w-auto mt-4 md:mt-0">
+                    <div className="bg-primary px-6 md:px-8 py-4 md:py-6 rounded-xl">
                       <div className="text-lg text-white/80 mb-2">Total</div>
-                      <div className="text-5xl font-bold text-white">$1,370,000</div>
+                      <div className="text-4xl md:text-5xl font-bold text-white">$1,370,000</div>
                     </div>
                   </div>
                 </div>
@@ -673,8 +673,8 @@ export default function Numeros() {
                       <FaMoneyBillWave className="text-3xl text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-primary mb-3">Nóminas</h3>
-                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                      <h3 className="text-lg md:text-xl font-bold text-primary mb-3">Nóminas</h3>
+                      <p className="text-lg md:text-2xl font-semibold text-gray-800 mb-3">
                         $50,000 / $60,000 x 3 GAM
                       </p>
                       <div className="bg-blue-50 border-l-4 border-primary p-3 rounded">
@@ -693,8 +693,8 @@ export default function Numeros() {
                       <FaServer className="text-3xl text-secondary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-primary mb-3">Dominio y hospedaje</h3>
-                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                      <h3 className="text-lg md:text-xl font-bold text-primary mb-3">Dominio y hospedaje</h3>
+                      <p className="text-lg md:text-2xl font-semibold text-gray-800 mb-3">
                         $990
                       </p>
                       <div className="bg-green-50 border-l-4 border-secondary p-3 rounded">
@@ -713,8 +713,8 @@ export default function Numeros() {
                       <FaGlobe className="text-3xl text-purple-600" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-primary mb-3">Compras y renovaciones de dominios</h3>
-                      <p className="text-2xl font-semibold text-gray-800">
+                      <h3 className="text-lg md:text-xl font-bold text-primary mb-3">Compras y renovaciones de dominios</h3>
+                      <p className="text-lg md:text-2xl font-semibold text-gray-800">
                         $200 - $800
                       </p>
                       <p className="text-sm text-gray-600 mt-2">
@@ -731,8 +731,8 @@ export default function Numeros() {
                       <FaHandshake className="text-3xl text-orange-600" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-primary mb-3">Apoyo Juan</h3>
-                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                      <h3 className="text-lg md:text-xl font-bold text-primary mb-3">Apoyo Juan</h3>
+                      <p className="text-lg md:text-2xl font-semibold text-gray-800 mb-3">
                         $4,500
                       </p>
                       <p className="text-sm text-gray-600">
@@ -754,17 +754,17 @@ export default function Numeros() {
               </h2>
 
               {/* Ingresos Mensuales */}
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-10 rounded-2xl shadow-lg border border-secondary/30 mb-8">
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 md:p-10 rounded-2xl shadow-lg border border-secondary/30 mb-8">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-primary mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     Ingresos Mensuales Actuales
                   </h3>
-                  <div className="flex items-center justify-center gap-4">
-                    <div className="text-5xl font-bold text-secondary">$100,000</div>
-                    <div className="text-3xl text-gray-400">-</div>
-                    <div className="text-5xl font-bold text-secondary">$125,000</div>
+                  <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
+                    <div className="text-3xl md:text-5xl font-bold text-secondary">$100,000</div>
+                    <div className="text-2xl md:text-3xl text-gray-400">-</div>
+                    <div className="text-3xl md:text-5xl font-bold text-secondary">$125,000</div>
                   </div>
-                  <p className="text-gray-600 mt-4 text-lg">
+                  <p className="text-gray-600 mt-4 text-base md:text-lg">
                     Después de <span className="font-bold text-secondary">3 años continuos</span> de trabajo.
                   </p>
                 </div>
@@ -774,32 +774,32 @@ export default function Numeros() {
                     <FaMapPin className="text-2xl text-secondary" />
                     <span className="font-bold text-gray-900">Nota importante:</span>
                   </div>
-                  <p className="text-gray-700 text-lg">
-                    Se empezó vendiendo <span className="font-bold text-secondary text-2xl">$5,000</span> mensuales en <span className="font-bold">julio del 2023.</span>
+                  <p className="text-gray-700 text-base md:text-lg">
+                    Se empezó vendiendo <span className="font-bold text-secondary text-xl md:text-2xl">$5,000</span> mensuales en <span className="font-bold">julio del 2023.</span>
                   </p>
-                  <div className="mt-4 flex items-center justify-center gap-4">
+                  <div className="mt-4 flex flex-wrap items-center justify-center gap-3 md:gap-4">
                     <div className="text-center">
-                      <div className="text-sm text-gray-600">Inicio</div>
-                      <div className="text-3xl font-bold text-primary">$5,000</div>
+                      <div className="text-xs md:text-sm text-gray-600">Inicio</div>
+                      <div className="text-2xl md:text-3xl font-bold text-primary">$5,000</div>
                     </div>
-                    <FaChartLine className="text-3xl text-secondary" />
+                    <FaChartLine className="text-2xl md:text-3xl text-secondary" />
                     <div className="text-center">
-                      <div className="text-sm text-gray-600">Actual</div>
-                      <div className="text-3xl font-bold text-secondary">$100K+</div>
+                      <div className="text-xs md:text-sm text-gray-600">Actual</div>
+                      <div className="text-2xl md:text-3xl font-bold text-secondary">$100K+</div>
                     </div>
-                    <div className="text-3xl">=</div>
+                    <div className="text-2xl md:text-3xl">=</div>
                     <div className="text-center">
-                      <div className="text-sm text-gray-600">Crecimiento</div>
-                      <div className="text-3xl font-bold text-secondary">2000%</div>
+                      <div className="text-xs md:text-sm text-gray-600">Crecimiento</div>
+                      <div className="text-2xl md:text-3xl font-bold text-secondary">2000%</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Portfolio Actual */}
-              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-10 rounded-2xl shadow-lg border border-primary/20">
-                <h3 className="text-3xl font-bold text-primary mb-8 text-center flex items-center justify-center gap-3">
-                  <FaChartBar className="text-3xl text-secondary" />
+              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 md:p-10 rounded-2xl shadow-lg border border-primary/20">
+                <h3 className="text-xl md:text-3xl font-bold text-primary mb-8 text-center flex flex-wrap items-center justify-center gap-3">
+                  <FaChartBar className="text-2xl md:text-3xl text-secondary" />
                   ABANZOFT hoy cuenta con:
                 </h3>
 
@@ -811,8 +811,8 @@ export default function Numeros() {
                         <FaUsers className="text-3xl text-primary" />
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Clientes Activos</div>
-                        <div className="text-5xl font-bold text-secondary">+40</div>
+                        <div className="text-xs md:text-sm text-gray-600">Clientes Activos</div>
+                        <div className="text-3xl md:text-5xl font-bold text-secondary">+40</div>
                       </div>
                     </div>
                     <p className="text-gray-600">Base sólida de clientes recurrentes.</p>
@@ -825,8 +825,8 @@ export default function Numeros() {
                         <FaLaptopCode className="text-3xl text-secondary" />
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Sistemas Desarrollados</div>
-                        <div className="text-5xl font-bold text-secondary">+15</div>
+                        <div className="text-xs md:text-sm text-gray-600">Sistemas Desarrollados</div>
+                        <div className="text-3xl md:text-5xl font-bold text-secondary">+15</div>
                       </div>
                     </div>
                     <p className="text-gray-600">Distintos rubros y funcionalidades.</p>
@@ -839,8 +839,8 @@ export default function Numeros() {
                         <FaGlobe className="text-3xl text-primary" />
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Páginas Web</div>
-                        <div className="text-5xl font-bold text-secondary">+15</div>
+                        <div className="text-xs md:text-sm text-gray-600">Páginas Web</div>
+                        <div className="text-3xl md:text-5xl font-bold text-secondary">+15</div>
                       </div>
                     </div>
                     <p className="text-gray-600">Formato web y e-commerce.</p>
@@ -853,8 +853,8 @@ export default function Numeros() {
                         <FaMap className="text-3xl text-secondary" />
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Mapas Digitales</div>
-                        <div className="text-5xl font-bold text-secondary">1</div>
+                        <div className="text-xs md:text-sm text-gray-600">Mapas Digitales</div>
+                        <div className="text-3xl md:text-5xl font-bold text-secondary">1</div>
                       </div>
                     </div>
                     <p className="text-gray-600">Navegación interactiva.</p>
@@ -863,11 +863,11 @@ export default function Numeros() {
 
                 {/* Banner de continuidad */}
                 <div className="mt-8 bg-primary p-6 rounded-xl text-white text-center">
-                  <p className="text-2xl font-bold mb-2 flex items-center justify-center gap-3">
-                    <FaRocket className="text-2xl text-secondary" />
+                  <p className="text-lg md:text-2xl font-bold mb-2 flex flex-wrap items-center justify-center gap-3">
+                    <FaRocket className="text-xl md:text-2xl text-secondary" />
                     Y continuando con muchos más proyectos...
                   </p>
-                  <p className="text-lg opacity-90">
+                  <p className="text-base md:text-lg opacity-90">
                     Pipeline activo con nuevos desarrollos en progreso.
                   </p>
                 </div>
