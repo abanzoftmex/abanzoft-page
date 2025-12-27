@@ -1,12 +1,12 @@
 import Layout from '@/components/Layout';
-import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, ParticleBackground, FloatingElement, ScrollReveal } from '@/components/animations';
+import { FadeIn, StaggerContainer, StaggerItem, AnimatedButton, CodeParticles, FloatingElement, ScrollReveal } from '@/components/animations';
 import { Settings, Globe, Lightbulb } from 'lucide-react';
 
 export default function Home() {
   return (
     <Layout hideFooter={true}>
       <div className="bg-white relative">
-        <ParticleBackground density={40} color="rgba(0, 0, 0, 0.04)" />
+        <CodeParticles density={30} />
         {/* Hero Section */}
         <div className="relative z-10">
           <section

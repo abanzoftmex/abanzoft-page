@@ -184,7 +184,7 @@ export default function Soluciones() {
 
               <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                       <Grid3x3 className="w-6 h-6 text-white" />
                     </div>
@@ -194,7 +194,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                       <TrendingUp className="w-6 h-6 text-white" />
                     </div>
@@ -204,7 +204,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                       <Link className="w-6 h-6 text-white" />
                     </div>
@@ -214,7 +214,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                       <Monitor className="w-6 h-6 text-white" />
                     </div>
@@ -224,7 +224,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                       <WifiOff className="w-6 h-6 text-white" />
                     </div>
@@ -234,7 +234,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                       <Users className="w-6 h-6 text-white" />
                     </div>
@@ -244,7 +244,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                       <Brain className="w-6 h-6 text-white" />
                     </div>
@@ -254,7 +254,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-secondary rounded-lg mb-4 flex items-center justify-center">
                       <Database className="w-6 h-6 text-white" />
                     </div>
@@ -264,7 +264,7 @@ export default function Soluciones() {
                 </StaggerItem>
 
                 <StaggerItem>
-                  <div className="bg-white p-6 rounded-lg h-full">
+                  <div className="bg-white p-6 rounded-lg h-full flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-primary rounded-lg mb-4 flex items-center justify-center">
                       <BarChart2 className="w-6 h-6 text-white" />
                     </div>

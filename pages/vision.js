@@ -145,10 +145,18 @@ export default function Vision() {
 
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-              variants={staggerContainer}
               initial="initial"
               whileInView="whileInView"
               viewport={{ once: true, margin: "-100px" }}
+              variants={{
+                initial: {},
+                whileInView: {
+                  transition: {
+                    staggerChildren: 0.7,
+                    delayChildren: 0.3
+                  }
+                }
+              }}
             >
               {[
                 { icon: FaBuilding, text: 'Mejor imagen corporativa, operativa, legal y administrativa.' },
@@ -160,13 +168,44 @@ export default function Vision() {
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  variants={cardVariant}
-                  className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-secondary"
+                  variants={{
+                    initial: { opacity: 0, y: 20, scale: 0.95 },
+                    whileInView: {
+                      opacity: 1,
+                      y: 0,
+                      scale: 1,
+                      transition: {
+                        duration: 0.6,
+                        ease: [0.25, 0.1, 0.25, 1]
+                      }
+                    }
+                  }}
+                  className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-secondary flex flex-col items-center text-center"
                 >
                   <item.icon className="text-3xl mb-3 text-secondary" />
                   <p className="text-base text-gray-700">{item.text}</p>
                 </motion.div>
               ))}
+            </motion.div>
+
+            <motion.div
+              className="text-center mt-8"
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: {
+                  duration: 0.6,
+                  ease: [0.25, 0.1, 0.25, 1],
+                  delay: 3.1
+                }
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <h3 className="text-5xl lg:text-7xl font-bold text-primary">
+                ABANZOFT 2026
+              </h3>
             </motion.div>
           </div>
         </section>
@@ -192,43 +231,43 @@ export default function Vision() {
               whileInView="whileInView"
               viewport={{ once: true, margin: "-100px" }}
             >
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center">
                 <FaGlobe className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Página Web</h3>
                 <p className="text-sm text-gray-600">www.abanzoft.com</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center">
                 <FaUsers className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Redes Sociales</h3>
                 <p className="text-sm text-gray-600">Instagram, Facebook, Community Manager.</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center">
                 <FaAward className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Catálogo Digital</h3>
                 <p className="text-sm text-gray-600">Servicios Digitales (PDF).</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center">
                 <FaUsers className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Equipo de Apoyo</h3>
                 <p className="text-sm text-gray-600">Juan, Gabriel, Diseño, Administrativa.</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center">
                 <FaMoneyBillWave className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Administración</h3>
                 <p className="text-sm text-gray-600">Departamento de Giros.</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center ">
                 <FaHandshake className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Ventas</h3>
                 <p className="text-sm text-gray-600">Clientes externos nuevos.</p>
               </motion.div>
 
-              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm md:col-span-2">
+              <motion.div variants={cardVariant} className="bg-gray-50 p-5 rounded-xl border border-gray-200 shadow-sm md:col-span-2 flex flex-col items-center">
                 <FaChartLine className="text-3xl mb-3 text-secondary" />
                 <h3 className="text-lg font-bold text-primary mb-2">Equipo de Vendedores</h3>
                 <p className="text-sm text-gray-600">A Comisión - Septiembre 2026.</p>
@@ -292,7 +331,7 @@ export default function Vision() {
                   Meta: Finales 2025 / Principios 2026
                 </p>
                 <p className="text-base text-white/90">
-                  Primera fase para el segundo Reino: <span className="font-bold">SASSI DEL VALLE</span>
+                  Primera fase para el segundo Reino: <span className="font-bold">SASSI DEL VALLE.</span>
                 </p>
               </motion.div>
             </motion.div>
@@ -345,33 +384,6 @@ export default function Vision() {
               </motion.div>
             </motion.div>
           </div>
-        </section>
-
-        {/* CTA Final - Pantalla 7 */}
-        <section className="min-h-screen flex items-center justify-center bg-primary text-white py-20">
-          <motion.div
-            className="max-w-4xl mx-auto px-6 text-center"
-            {...fadeInUp}
-          >
-            <FaHandshake className="text-7xl mx-auto mb-6 text-secondary" />
-            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
-              Únete a Nuestra Visión
-            </h2>
-            <p className="text-xl lg:text-2xl text-gray-300 mb-10 leading-relaxed">
-              Estamos construyendo el futuro de las soluciones digitales para Reinos de México.
-              <br />
-              <span className="text-secondary font-semibold">Contáctanos para ser parte de esta transformación.</span>
-            </p>
-            <motion.a
-              href="/contacto"
-              className="inline-flex items-center gap-3 bg-secondary hover:opacity-90 text-white px-10 py-5 rounded-full text-xl font-bold transition-all shadow-xl hover:shadow-2xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaRocket className="text-2xl" />
-              Contactar Ahora
-            </motion.a>
-          </motion.div>
         </section>
       </div>
     </Layout>

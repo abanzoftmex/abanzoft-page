@@ -23,7 +23,10 @@ import {
   FaMap,
   FaClock,
   FaBriefcase,
-  FaMapPin
+  FaMapPin,
+  FaMoneyBillWave,
+  FaServer,
+  FaHandshake
 } from 'react-icons/fa';
 
 const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
@@ -32,51 +35,50 @@ export default function Numeros() {
   // Datos de línea de tiempo
   const timelineEvents = [
     {
-      year: '2022',
-      title: 'Fundación de ABANZOFT',
-      icon: <FaRocket />,
-      color: 'blue',
-      items: [
-        { label: 'Julio - Diciembre', text: 'Inversión de $560,000 para iniciar 4 proyectos en ZOHO' },
-        { label: 'Sociedad Inicial', text: '51% UA / 49% G-A-M' },
-        { label: 'Decisión Estratégica', text: 'Desarrollo desde cero con código propio para control total' }
-      ]
-    },
-    {
       year: '2023',
-      title: 'Instalación Formal y Primeros Ingresos',
+      title: 'Año 2023',
       icon: <FaChartLine />,
       color: 'green',
       items: [
-        { label: 'Enero - Septiembre', text: 'Inversión adicional de $810,000' },
-        { label: 'Julio 2023', text: 'Primera mensualidad cobrada - Primer ingreso directo' },
-        { label: 'Finales de 2023', text: 'Creación de nómina operativa de $50,000/mes' },
-        { label: 'Resultados', text: 'Ventas: $216,070 | Utilidades: $66,070' }
+        { label: 'VENTAS', text: '$216,070' },
+        { label: 'GASTOS', text: '' },
+        { label: '  • Nóminas', text: '$150,000' },
+        { label: 'UTILIDADES', text: '$66,070' },
+        { label: '  • Reparto', text: '' },
+        { label: '    → UA', text: '$42,276' },
+        { label: '    → GAM', text: '$28,184' }
       ]
     },
     {
       year: '2024',
-      title: 'Crecimiento y Reestructuración',
+      title: 'Año 2024',
       icon: <FaLightbulb />,
       color: 'purple',
       items: [
-        { label: 'Mediados de 2024', text: 'Incremento de nómina a $60,000/mes' },
-        { label: 'Reajuste de Sociedad', text: '60% UA / 40% G-A-M para equilibrar utilidades.' },
-        { label: 'Resultados', text: 'Ventas: $1,158,140 | Utilidades: $489,507' },
-        { label: 'Crecimiento', text: '436% en ventas vs 2023' }
+        { label: 'VENTAS', text: '$1,158,140' },
+        { label: 'GASTOS', text: '' },
+        { label: '  • Nóminas', text: '$650,000' },
+        { label: '  • Generales', text: '$18,633' },
+        { label: 'UTILIDADES', text: '$489,507' },
+        { label: '  • Reparto', text: '' },
+        { label: '    → UA', text: '$293,704' },
+        { label: '    → GAM', text: '$195,802' }
       ]
     },
     {
       year: '2025',
-      title: 'Consolidación y Visión 2.0',
+      title: 'Año 2025',
       icon: <FaAward />,
       color: 'orange',
       items: [
-        { label: 'Estado Actual', text: 'Ingresos mensuales: $100,000 - $125,000' },
-        { label: 'Noviembre 2025', text: 'Ventas: $1,325,540 | Utilidades: $476,023' },
-        { label: 'Portfolio', text: '40+ clientes, 15+ sistemas, 15+ páginas web' },
-        { label: 'Julio 2025', text: 'Nómina: $90,000/mes con Juan y Gabriel' },
-        { label: 'Visión', text: 'Preparación para ABANZOFT 2.0 y mercado externo' }
+        { label: 'VENTAS', text: '$1,325,540 (NOVIEMBRE)' },
+        { label: 'GASTOS', text: '' },
+        { label: '  • Nóminas', text: '$810,000 (NOVIEMBRE)' },
+        { label: '  • Generales', text: '$39,517 (NOVIEMBRE)' },
+        { label: 'UTILIDADES', text: '$476,023 (NOVIEMBRE)' },
+        { label: '  • Reparto', text: '' },
+        { label: '    → UA', text: '$285,614 (NOVIEMBRE)' },
+        { label: '    → GAM', text: '$190,409 (NOVIEMBRE)' }
       ]
     }
   ];
@@ -96,8 +98,8 @@ export default function Numeros() {
   ];
 
   const repartoData2025 = [
-    { name: 'UA', value: 285614 },
-    { name: 'GAM', value: 190409 }
+    { name: 'UA', value: 621594 },
+    { name: 'GAM', value: 414395 }
   ];
 
   const crecimientoData = [
@@ -151,168 +153,28 @@ export default function Numeros() {
           {/* Historia y Sociedad Section */}
           <section className="py-16 px-6 lg:px-8 bg-white">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-4xl font-bold text-primary mb-12 text-center">
-                Historia y Sociedad
-              </h2>
 
-              <div className="space-y-10">
-                {/* Origen 2022 */}
-                <div className="bg-primary p-8 rounded-2xl border border-primary/20">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                    <FaRocket className="text-4xl mr-3 text-secondary" />
-                    El Origen - 2022
-                  </h3>
-                  <p className="text-lg text-gray-200 leading-relaxed mb-6">
-                    En el <span className="font-bold text-secondary">2022</span> ABANZOFT nace con la invitación e iniciativa de <span className="font-bold text-white">Adolfo Blanca</span> y <span className="font-bold text-white">Germán Blanca</span> para crear una unidad de negocio que desarrolle Sistemas/Software a la medida para Universo aBanza y Val'Quirico.
-                  </p>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Sociedad Inicial</div>
-                      <div className="flex items-baseline justify-center gap-3">
-                        <span className="text-3xl font-bold text-primary">51%</span>
-                        <span className="text-gray-700">Universo aBanza</span>
-                      </div>
-                      <div className="flex items-baseline justify-center gap-3 mt-2">
-                        <span className="text-3xl font-bold text-secondary">49%</span>
-                        <span className="text-gray-700">G-A-M</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Inversión Inicial</div>
-                      <div className="text-4xl font-bold text-secondary mb-2">$560,000</div>
-                      <div className="text-sm text-gray-600">Julio - Diciembre 2022</div>
-                    </div>
+              {/* Resumen de Inversión Total */}
+              <div className="bg-secondary p-8 rounded-2xl border border-secondary/30">
+                <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-3">
+                  <FaDollarSign className="text-3xl text-white" />
+                  Inversión Total Acumulada
+                </h3>
+                <div className="flex justify-center items-center gap-8">
+                  <div className="text-center">
+                    <div className="text-lg text-white/80 mb-2">2022</div>
+                    <div className="text-3xl font-bold text-white">$560,000</div>
                   </div>
-
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-sm font-semibold text-gray-900 mb-3">4 Proyectos Iniciales:</div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-secondary">▶</span>
-                        <span className="font-medium text-gray-900">Catálogo de Productos</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-secondary">▶</span>
-                        <span className="font-medium text-gray-900">Sistema Inmobiliario</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-secondary">▶</span>
-                        <span className="font-medium text-gray-900">Sistema Condominal</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-secondary">▶</span>
-                        <span className="font-medium text-gray-900">Sistema Administrativo-Contable</span>
-                      </div>
-                    </div>
+                  <div className="text-4xl text-white/60">+</div>
+                  <div className="text-center">
+                    <div className="text-lg text-white/80 mb-2">2023</div>
+                    <div className="text-3xl font-bold text-white">$810,000</div>
                   </div>
-
-                  <div className="mt-6 p-4 bg-secondary/20 border-l-4 border-secondary rounded">
-                    <p className="text-gray-200 leading-relaxed">
-                      <span className="font-bold text-white">Decisión estratégica:</span> Después de analizar ZOHO y ver que no se tenía el control al 100%, se decidió que <span className="font-bold text-white">ABANZOFT desarrollara desde cero con código propio</span> para tener control total.
-                    </p>
-                  </div>
-                </div>
-
-                {/* 2023 Instalación Formal */}
-                <div className="bg-primary p-8 rounded-2xl border border-primary/20">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                    <FaBuilding className="text-4xl mr-3 text-secondary" />
-                    Instalación Formal - 2023
-                  </h3>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Inversión Adicional</div>
-                      <div className="text-4xl font-bold text-secondary mb-2">$810,000</div>
-                      <div className="text-sm text-gray-600">Enero - Septiembre 2023.</div>
-                      <div className="mt-3 text-sm text-gray-700">
-                        Para instalar formalmente a ABANZOFT dentro de Val'Quirico.
-                      </div>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Primera Venta</div>
-                      <div className="text-4xl font-bold text-secondary mb-2">$5,000</div>
-                      <div className="text-sm text-gray-600">Julio 2023 - Primer ingreso directo.</div>
-                      <div className="mt-3">
-                        <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">
-                          Primera mensualidad cobrada
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <div className="text-sm font-semibold text-gray-900 mb-3">Finales 2023:</div>
-                    <div className="flex items-center justify-center gap-4">
-                      <div className="text-3xl font-bold text-primary">$50,000</div>
-                      <div className="text-gray-700">
-                        <div className="font-semibold">Nómina Operativa</div>
-                        <div className="text-sm text-gray-600">Gasto mensual.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 2024 Crecimiento */}
-                <div className="bg-primary p-8 rounded-2xl border border-primary/20">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                    <FaChartLine className="text-4xl mr-3 text-secondary" />
-                    Crecimiento - 2024
-                  </h3>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Nómina Incrementada</div>
-                      <div className="flex items-center justify-center gap-3">
-                        <div className="text-3xl font-bold text-gray-400">$50,000</div>
-                        <span className="text-2xl">→</span>
-                        <div className="text-3xl font-bold text-secondary">$60,000</div>
-                      </div>
-                      <div className="text-sm text-gray-600 mt-2">Mediados de 2024.</div>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-                      <div className="text-sm text-gray-600 mb-2">Ajuste de Sociedad</div>
-                      <div className="space-y-2">
-                        <div className="flex items-baseline justify-center gap-3">
-                          <span className="text-3xl font-bold text-primary">60%</span>
-                          <span className="text-gray-700 font-semibold">Universo aBanza</span>
-                        </div>
-                        <div className="flex items-baseline justify-center gap-3">
-                          <span className="text-3xl font-bold text-secondary">40%</span>
-                          <span className="text-gray-700 font-semibold">G-A-M</span>
-                        </div>
-                      </div>
-                      <div className="mt-3 text-sm text-gray-600">Para equilibrar utilidades.</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Resumen de Inversión Total */}
-                <div className="bg-secondary p-8 rounded-2xl border border-secondary/30">
-                  <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-3">
-                    <FaDollarSign className="text-3xl text-white" />
-                    Inversión Total Acumulada
-                  </h3>
-                  <div className="flex justify-center items-center gap-8">
-                    <div className="text-center">
-                      <div className="text-lg text-white/80 mb-2">2022</div>
-                      <div className="text-3xl font-bold text-white">$560,000</div>
-                    </div>
-                    <div className="text-4xl text-white/60">+</div>
-                    <div className="text-center">
-                      <div className="text-lg text-white/80 mb-2">2023</div>
-                      <div className="text-3xl font-bold text-white">$810,000</div>
-                    </div>
-                    <div className="text-4xl text-white/60">=</div>
-                    <div className="text-center">
-                      <div className="bg-primary px-8 py-6 rounded-xl">
-                        <div className="text-lg text-white/80 mb-2">Total</div>
-                        <div className="text-5xl font-bold text-white">$1,370,000</div>
-                      </div>
+                  <div className="text-4xl text-white/60">=</div>
+                  <div className="text-center">
+                    <div className="bg-primary px-8 py-6 rounded-xl">
+                      <div className="text-lg text-white/80 mb-2">Total</div>
+                      <div className="text-5xl font-bold text-white">$1,370,000</div>
                     </div>
                   </div>
                 </div>
@@ -389,95 +251,6 @@ export default function Numeros() {
                   fullOpacity={true}
                 />
               </div>
-
-              {/* Gráficos principales lado a lado */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {/* Gráfico de barras comparativo */}
-
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                    <FaChartPie className="mr-3 text-2xl text-secondary" />
-                    Evolución Financiera
-                  </h3>
-                  <ResponsiveContainer width="100%" height={350}>
-                    <BarChart data={ventasData}>
-                      <defs>
-                        <linearGradient id="colorVentas" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9} />
-                          <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6} />
-                        </linearGradient>
-                        <linearGradient id="colorGastos" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#ef4444" stopOpacity={0.9} />
-                          <stop offset="95%" stopColor="#ef4444" stopOpacity={0.6} />
-                        </linearGradient>
-                        <linearGradient id="colorUtilidades" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.9} />
-                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.6} />
-                        </linearGradient>
-                      </defs>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                      <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
-                      <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                      <Tooltip
-                        contentStyle={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                          border: 'none',
-                          borderRadius: '16px',
-                          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-                          padding: '12px'
-                        }}
-                        formatter={(value) => `$${value.toLocaleString()}`}
-                      />
-                      <Legend wrapperStyle={{ paddingTop: '20px' }} />
-                      <Bar dataKey="ventas" fill="url(#colorVentas)" name="Ventas" radius={[8, 8, 0, 0]} />
-                      <Bar dataKey="gastos" fill="url(#colorGastos)" name="Gastos" radius={[8, 8, 0, 0]} />
-                      <Bar dataKey="utilidades" fill="url(#colorUtilidades)" name="Utilidades" radius={[8, 8, 0, 0]} />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </div>
-
-
-                {/* Gráfico de área - Crecimiento */}
-
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                    <FaChartArea className="mr-3 text-2xl text-secondary" />
-                    Tasa de Crecimiento
-                  </h3>
-                  <ResponsiveContainer width="100%" height={350}>
-                    <AreaChart data={crecimientoData}>
-                      <defs>
-                        <linearGradient id="colorCrecimiento" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
-                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.1} />
-                        </linearGradient>
-                      </defs>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                      <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
-                      <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                      <Tooltip
-                        contentStyle={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                          border: 'none',
-                          borderRadius: '16px',
-                          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-                          padding: '12px'
-                        }}
-                        formatter={(value) => `${value}%`}
-                      />
-                      <Area
-                        type="monotone"
-                        dataKey="crecimiento"
-                        stroke="#10b981"
-                        strokeWidth={3}
-                        fillOpacity={1}
-                        fill="url(#colorCrecimiento)"
-                      />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-
-              </div>
             </div>
           </section>
 
@@ -540,11 +313,11 @@ export default function Numeros() {
 
                   <div className="bg-primary p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
                     <div className="flex items-center justify-between mb-3">
-                      <div className="text-sm text-white uppercase tracking-wider">UA (60%)</div>
+                      <div className="text-sm text-white uppercase tracking-wider">UA (61.8%)</div>
                       <FaBullseye className="text-2xl text-white/80" />
                     </div>
                     <div className="text-5xl font-bold text-white mb-2">
-                      <AnimatedCounter end={285614} />
+                      <AnimatedCounter end={621594} />
                     </div>
                     <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
@@ -556,11 +329,11 @@ export default function Numeros() {
 
                   <div className="bg-secondary p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
                     <div className="flex items-center justify-between mb-3">
-                      <div className="text-sm text-white uppercase tracking-wider">GAM (40%)</div>
+                      <div className="text-sm text-white uppercase tracking-wider">GAM (38.2%)</div>
                       <FaRocket className="text-2xl text-white/80" />
                     </div>
                     <div className="text-5xl font-bold text-white mb-2">
-                      <AnimatedCounter end={190409} />
+                      <AnimatedCounter end={414395} />
                     </div>
                     <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
@@ -643,8 +416,11 @@ export default function Numeros() {
                           contentStyle={{
                             backgroundColor: 'white',
                             border: '1px solid #e5e7eb',
-                            borderRadius: '8px'
+                            borderRadius: '8px',
+                            color: '#1f2937'
                           }}
+                          labelStyle={{ color: '#1f2937', fontWeight: 'bold' }}
+                          itemStyle={{ color: '#1f2937' }}
                         />
                         <Bar dataKey="monto" fill="url(#barGradient)" radius={[8, 8, 0, 0]} />
                       </BarChart>
@@ -670,6 +446,135 @@ export default function Numeros() {
             </div>
           </section>
 
+          {/* Gráficos principales lado a lado */}
+          <section className="py-12 px-6 lg:px-8 bg-white">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Gráfico de barras comparativo */}
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
+                    <FaChartPie className="mr-3 text-2xl text-secondary" />
+                    Evolución Financiera
+                  </h3>
+                  <ResponsiveContainer width="100%" height={350}>
+                    <BarChart data={ventasData}>
+                      <defs>
+                        <linearGradient id="colorVentas" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#2b3445" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#2b3445" stopOpacity={0.6} />
+                        </linearGradient>
+                        <linearGradient id="colorGastos" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#ef4444" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#ef4444" stopOpacity={0.6} />
+                        </linearGradient>
+                        <linearGradient id="colorUtilidades" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.9} />
+                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.6} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                      <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
+                      <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
+                      <Tooltip
+                        content={({ active, payload, label }) => {
+                          if (active && payload && payload.length) {
+                            return (
+                              <div style={{
+                                backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                                border: 'none',
+                                borderRadius: '16px',
+                                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+                                padding: '12px',
+                                color: '#1f2937'
+                              }}>
+                                <p style={{ fontWeight: 'bold', marginBottom: '8px', color: '#1f2937' }}>{label}</p>
+                                <p style={{ margin: '4px 0', color: '#1f2937' }}>
+                                  <span style={{ color: '#2b3445' }}>Ventas</span>: ${payload[0]?.payload.ventas.toLocaleString()}
+                                </p>
+                                <p style={{ margin: '4px 0', color: '#1f2937' }}>
+                                  <span style={{ color: '#ef4444' }}>Gastos</span>: ${payload[0]?.payload.gastos.toLocaleString()}
+                                </p>
+                                <p style={{ margin: '4px 0', color: '#1f2937' }}>
+                                  <span style={{ color: '#10b981' }}>Utilidades</span>: ${payload[0]?.payload.utilidades.toLocaleString()}
+                                </p>
+                              </div>
+                            );
+                          }
+                          return null;
+                        }}
+                      />
+                      <Bar dataKey="ventas" fill="url(#colorVentas)" name="Ventas" radius={[8, 8, 0, 0]} />
+                      <Bar dataKey="gastos" fill="url(#colorGastos)" name="Gastos" radius={[8, 8, 0, 0]} />
+                      <Bar dataKey="utilidades" fill="url(#colorUtilidades)" name="Utilidades" radius={[8, 8, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+
+                  {/* Leyenda personalizada */}
+                  <div className="flex justify-center items-center gap-6 mt-4">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#2b3445' }}></div>
+                      <span className="text-sm font-medium text-gray-700">Ventas</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#ef4444' }}></div>
+                      <span className="text-sm font-medium text-gray-700">Gastos</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#10b981' }}></div>
+                      <span className="text-sm font-medium text-gray-700">Utilidades</span>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                {/* Gráfico de área - Crecimiento */}
+
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
+                    <FaChartArea className="mr-3 text-2xl text-secondary" />
+                    Tasa de Crecimiento
+                  </h3>
+                  <ResponsiveContainer width="100%" height={350}>
+                    <AreaChart data={crecimientoData}>
+                      <defs>
+                        <linearGradient id="colorCrecimiento" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
+                          <stop offset="95%" stopColor="#10b981" stopOpacity={0.1} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                      <XAxis dataKey="year" stroke="#6b7280" style={{ fontSize: '14px', fontWeight: '600' }} />
+                      <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
+                      <Tooltip
+                        contentStyle={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                          border: 'none',
+                          borderRadius: '16px',
+                          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+                          padding: '12px',
+                          color: '#1f2937'
+                        }}
+                        labelStyle={{ color: '#1f2937', fontWeight: 'bold' }}
+                        itemStyle={{ color: '#1f2937' }}
+                        formatter={(value) => `${value}%`}
+                      />
+                      <Area
+                        type="monotone"
+                        dataKey="crecimiento"
+                        stroke="#10b981"
+                        strokeWidth={3}
+                        fillOpacity={1}
+                        fill="url(#colorCrecimiento)"
+                      />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
           {/* Timeline Moderna */}
           <section className="py-16 px-6 lg:px-8 bg-gray-50">
             <div className="max-w-6xl mx-auto">
@@ -686,25 +591,60 @@ export default function Numeros() {
                     <div key={event.year} className={`relative flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                       {/* Contenido */}
                       <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12 lg:text-left'}`}>
-                        <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                          <div className={`inline-block px-4 py-1 rounded-full text-white text-sm font-semibold mb-3 ${colorClasses[event.color]}`}>
+                        <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl border-2 border-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-secondary/30">
+                          {/* Badge del año con gradiente */}
+                          <div className={`inline-block px-6 py-2 rounded-full text-white text-sm font-bold mb-4 shadow-lg ${colorClasses[event.color]} bg-gradient-to-r`}>
                             {event.year}
                           </div>
-                          <h3 className="text-2xl font-bold text-primary mb-4">{event.title}</h3>
-                          <div className="space-y-3">
-                            {event.items.map((item, i) => (
-                              <div key={i} className="text-left">
-                                <span className="font-semibold text-gray-900">{item.label}:</span>
-                                <span className="text-gray-600 ml-2">{item.text}</span>
-                              </div>
-                            ))}
+
+                          {/* Título */}
+                          <h3 className="text-2xl font-bold text-primary mb-6 group-hover:text-secondary transition-colors">
+                            {event.title}
+                          </h3>
+
+                          {/* Items con mejor estructura */}
+                          <div className="space-y-2">
+                            {event.items.map((item, i) => {
+                              const isMainCategory = ['VENTAS', 'GASTOS', 'UTILIDADES'].includes(item.label);
+                              const isSubItem = item.label.startsWith('  •');
+                              const isReparto = item.label.includes('→');
+
+                              return (
+                                <div
+                                  key={i}
+                                  className={`text-left transition-all duration-200 ${isMainCategory ? 'mt-3 pt-3 border-t border-gray-200' : ''
+                                    }`}
+                                >
+                                  {item.label && (
+                                    <span className={`font-semibold ${isMainCategory ? 'text-primary text-lg' :
+                                      isReparto ? 'text-secondary' :
+                                        'text-gray-700'
+                                      }`}>
+                                      {item.label}
+                                      {item.label.endsWith(':') ? '' : item.text ? ':' : ''}
+                                    </span>
+                                  )}
+                                  {item.text && (
+                                    <span className={`ml-2 ${isMainCategory ? 'text-gray-900 font-semibold text-lg' :
+                                      isReparto ? 'text-gray-800 font-medium' :
+                                        'text-gray-600'
+                                      }`}>
+                                      {item.text}
+                                    </span>
+                                  )}
+                                </div>
+                              );
+                            })}
                           </div>
+
+                          {/* Decoración inferior */}
+                          <div className={`mt-6 h-1 w-20 rounded-full ${colorClasses[event.color]} opacity-50 group-hover:opacity-100 transition-opacity ${index % 2 === 0 ? 'ml-auto' : ''}`}></div>
                         </div>
                       </div>
 
                       {/* Icono central */}
                       <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
-                        <div className={`w-16 h-16 rounded-full ${colorClasses[event.color]} flex items-center justify-center text-white text-2xl shadow-lg`}>
+                        <div className={`w-20 h-20 rounded-full ${colorClasses[event.color]} flex items-center justify-center text-white text-3xl shadow-2xl animate-pulse hover:animate-none hover:scale-110 transition-transform duration-300 ring-4 ring-white`}>
                           {event.icon}
                         </div>
                       </div>
@@ -713,6 +653,93 @@ export default function Numeros() {
                       <div className="hidden lg:block w-5/12"></div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Gastos Detallados */}
+          <section className="py-16 px-6 lg:px-8 bg-gray-50">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-primary mb-10">
+                GASTOS (DETALLE):
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Nóminas */}
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-primary/10 rounded-lg">
+                      <FaMoneyBillWave className="text-3xl text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Nóminas</h3>
+                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                        $50,000 / $60,000 x 3 GAM
+                      </p>
+                      <div className="bg-blue-50 border-l-4 border-primary p-3 rounded">
+                        <p className="text-sm text-gray-700">
+                          <span className="font-semibold">Nota:</span> serán $90,000 a partir de julio del 2025 en adelante con la integración de Juan y Gabriel.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dominio y hospedaje */}
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-secondary/10 rounded-lg">
+                      <FaServer className="text-3xl text-secondary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Dominio y hospedaje</h3>
+                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                        $990
+                      </p>
+                      <div className="bg-green-50 border-l-4 border-secondary p-3 rounded">
+                        <p className="text-sm text-gray-700">
+                          A partir de julio del 2025 se ajustó a <span className="font-semibold">$1,350</span> por una integración de respaldo para asegurar la información de cada sistema.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Compras y renovaciones de dominios */}
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-purple-100 rounded-lg">
+                      <FaGlobe className="text-3xl text-purple-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Compras y renovaciones de dominios</h3>
+                      <p className="text-2xl font-semibold text-gray-800">
+                        $200 - $800
+                      </p>
+                      <p className="text-sm text-gray-600 mt-2">
+                        Varían según el tipo
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Apoyo Juan */}
+                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-orange-100 rounded-lg">
+                      <FaHandshake className="text-3xl text-orange-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Apoyo Juan</h3>
+                      <p className="text-2xl font-semibold text-gray-800 mb-3">
+                        $4,500
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        Por los proyectos desarrollados, durante 4 meses en el 2025. Antes de contratarlo formalmente.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

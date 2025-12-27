@@ -30,9 +30,6 @@ export default function Navbar() {
             <Link href="/vision" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
               Visión 2.0
             </Link>
-            <Link href="/contacto" className="inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white bg-secondary rounded-lg hover:opacity-90 transition-opacity">
-              Contacto
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
