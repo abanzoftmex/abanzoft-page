@@ -718,7 +718,7 @@ export default function Numeros() {
                         $200 - $800
                       </p>
                       <p className="text-sm text-gray-600 mt-2">
-                        Varían según el tipo
+                        Varían según el tipo.
                       </p>
                     </div>
                   </div>

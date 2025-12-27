@@ -366,7 +366,7 @@ export default function Vision() {
 
               <motion.div variants={cardVariant} className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                 <h3 className="text-2xl font-bold mb-3 text-secondary">Licencias por Usuario</h3>
-                <p className="text-base text-gray-700">Cada Unidad o Giro cubrirá una renta justa por uso del sistema o módulo asignado..</p>
+                <p className="text-base text-gray-700">Cada Unidad o Giro cubrirá una renta justa por uso del sistema o módulo asignado.</p>
               </motion.div>
 
               <motion.div variants={cardVariant} className="grid grid-cols-1 md:grid-cols-2 gap-6">

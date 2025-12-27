@@ -103,13 +103,13 @@ export default function Nosotros() {
 
           <div className="space-y-10">
             {/* Origen 2022 */}
-            <div className="bg-secondary p-8 rounded-2xl border border-primary/20">
+            <div className="bg-primary p-8 rounded-2xl border border-primary/20">
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <FaRocket className="text-4xl mr-3 text-primary" />
+                <FaRocket className="text-4xl mr-3 text-secondary" />
                 El Origen - 2022
               </h3>
               <p className="text-lg text-gray-200 leading-relaxed mb-6">
-                En el <span className="font-bold text-primary">2022</span> ABANZOFT nace con la invitación e iniciativa de <span className="font-bold text-white">Adolfo Blanca</span> y <span className="font-bold text-white">Germán Blanca</span> para crear una unidad de negocio que desarrolle Sistemas/Software a la medida para Universo aBanza y Val'Quirico.
+                En el <span className="font-bold text-secondary">2022</span> ABANZOFT nace con la invitación e iniciativa de <span className="font-bold text-white">Adolfo Blanca</span> y <span className="font-bold text-white">Germán Blanca</span> para crear una unidad de negocio que desarrolle Sistemas/Software a la medida para Universo aBanza y Val'Quirico.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -154,7 +154,7 @@ export default function Nosotros() {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-primary/20 border-l-4 border-primary rounded">
+              <div className="mt-6 p-4 bg-secondary/20 border-l-4 border-secondary rounded">
                 <p className="text-gray-200 leading-relaxed">
                   <span className="font-bold text-white">Decisión estratégica:</span> Después de analizar ZOHO y ver que no se tenía el control al 100%, se decidió que <span className="font-bold text-white">ABANZOFT desarrollara desde cero con código propio</span> para tener control total.
                 </p>
@@ -162,9 +162,9 @@ export default function Nosotros() {
             </div>
 
             {/* 2023 Instalación Formal */}
-            <div className="bg-secondary p-8 rounded-2xl border border-primary/20">
+            <div className="bg-primary p-8 rounded-2xl border border-primary/20">
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <FaBuilding className="text-4xl mr-3 text-primary" />
+                <FaBuilding className="text-4xl mr-3 text-secondary" />
                 Instalación Formal - 2023
               </h3>
 
@@ -203,9 +203,9 @@ export default function Nosotros() {
             </div>
 
             {/* 2024 Crecimiento */}
-            <div className="bg-secondary p-8 rounded-2xl border border-primary/20">
+            <div className="bg-primary p-8 rounded-2xl border border-primary/20">
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <FaChartLine className="text-4xl mr-3 text-primary" />
+                <FaChartLine className="text-4xl mr-3 text-secondary" />
                 Crecimiento - 2024
               </h3>
 
