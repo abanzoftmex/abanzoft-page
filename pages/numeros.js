@@ -71,14 +71,14 @@ export default function Numeros() {
       icon: <FaAward />,
       color: 'orange',
       items: [
-        { label: 'VENTAS', text: '$1,441,720 (NOVIEMBRE)' },
+        { label: 'VENTAS', text: '$1,441,720' },
         { label: 'GASTOS', text: '' },
-        { label: '  • Nóminas', text: '$900,000 (NOVIEMBRE)' },
-        { label: '  • Generales', text: '$40,857 (NOVIEMBRE)' },
-        { label: 'UTILIDADES', text: '$500,863 (NOVIEMBRE)' },
+        { label: '  • Nóminas', text: '$900,000' },
+        { label: '  • Generales', text: '$40,857' },
+        { label: 'UTILIDADES', text: '$500,863' },
         { label: '  • Reparto', text: '' },
-        { label: '    → UA', text: '$300,518 (NOVIEMBRE)' },
-        { label: '    → GAM', text: '$200,345 (NOVIEMBRE)' }
+        { label: '    → UA', text: '$300,518' },
+        { label: '    → GAM', text: '$200,345' }
       ]
     }
   ];
@@ -98,8 +98,8 @@ export default function Numeros() {
   ];
 
   const repartoData2025 = [
-    { name: 'UA', value: 621594 },
-    { name: 'GAM', value: 414395 }
+    { name: 'UA', value: 636498 },
+    { name: 'GAM', value: 424331 }
   ];
 
   const crecimientoData = [
@@ -223,7 +223,7 @@ export default function Numeros() {
                 />
                 <DataCard
                   title="Utilidades UA"
-                  value={621594}
+                  value={636498}
                   subtitle="60% del total"
                   icon={<FaBullseye />}
                   color="primary"
@@ -232,7 +232,7 @@ export default function Numeros() {
                 />
                 <DataCard
                   title="Utilidades GAM"
-                  value={414395}
+                  value={424331}
                   subtitle="40% del total"
                   icon={<FaRocket />}
                   color="secondary"
@@ -317,7 +317,7 @@ export default function Numeros() {
                       <FaBullseye className="text-2xl text-white/80" />
                     </div>
                     <div className="text-5xl font-bold text-white mb-2">
-                      <AnimatedCounter end={621594} />
+                      <AnimatedCounter end={636498} />
                     </div>
                     <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
@@ -333,7 +333,7 @@ export default function Numeros() {
                       <FaRocket className="text-2xl text-white/80" />
                     </div>
                     <div className="text-5xl font-bold text-white mb-2">
-                      <AnimatedCounter end={414395} />
+                      <AnimatedCounter end={424331} />
                     </div>
                     <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
@@ -387,7 +387,7 @@ export default function Numeros() {
                       <div>
                         <div className="text-sm text-gray-600 mb-2 uppercase tracking-wider">Utilidades Recibidas</div>
                         <div className="text-4xl font-bold text-secondary mb-2">
-                          <AnimatedCounter end={621594} />
+                          <AnimatedCounter end={636498} />
                         </div>
                         <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-secondary to-primary" style={{ width: '45.4%' }}></div>
