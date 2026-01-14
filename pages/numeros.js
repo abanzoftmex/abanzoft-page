@@ -43,7 +43,7 @@ export default function Numeros() {
         { label: 'VENTAS', text: '$216,070' },
         { label: 'GASTOS', text: '' },
         { label: '  • Nóminas', text: '$150,000' },
-        { label: 'UTILIDADES', text: '$66,070' },
+        { label: 'UTILIDADES', text: '$70,460' },
         { label: '  • Reparto', text: '' },
         { label: '    → UA', text: '$42,276' },
         { label: '    → GAM', text: '$28,184' }
@@ -71,14 +71,14 @@ export default function Numeros() {
       icon: <FaAward />,
       color: 'orange',
       items: [
-        { label: 'VENTAS', text: '$1,325,540 (NOVIEMBRE)' },
+        { label: 'VENTAS', text: '$1,441,720 (NOVIEMBRE)' },
         { label: 'GASTOS', text: '' },
-        { label: '  • Nóminas', text: '$810,000 (NOVIEMBRE)' },
-        { label: '  • Generales', text: '$39,517 (NOVIEMBRE)' },
-        { label: 'UTILIDADES', text: '$476,023 (NOVIEMBRE)' },
+        { label: '  • Nóminas', text: '$900,000 (NOVIEMBRE)' },
+        { label: '  • Generales', text: '$40,857 (NOVIEMBRE)' },
+        { label: 'UTILIDADES', text: '$500,863 (NOVIEMBRE)' },
         { label: '  • Reparto', text: '' },
-        { label: '    → UA', text: '$285,614 (NOVIEMBRE)' },
-        { label: '    → GAM', text: '$190,409 (NOVIEMBRE)' }
+        { label: '    → UA', text: '$300,518 (NOVIEMBRE)' },
+        { label: '    → GAM', text: '$200,345 (NOVIEMBRE)' }
       ]
     }
   ];
@@ -194,7 +194,7 @@ export default function Numeros() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <DataCard
                   title="Ventas Totales"
-                  value={2699750}
+                  value={2815930}
                   subtitle="Nov 2025"
                   icon={<FaDollarSign />}
                   color="primary"
@@ -204,7 +204,7 @@ export default function Numeros() {
                 />
                 <DataCard
                   title="Gastos Totales"
-                  value={1668150}
+                  value={1759490}
                   subtitle="Nov 2025"
                   icon={<FaChartBar />}
                   color="red"
@@ -213,7 +213,7 @@ export default function Numeros() {
                 />
                 <DataCard
                   title="Utilidades"
-                  value={1031600}
+                  value={1060830}
                   subtitle="Nov 2025"
                   icon={<FaStar />}
                   color="green"
