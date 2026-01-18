@@ -195,7 +195,6 @@ export default function Numeros() {
                 <DataCard
                   title="Ventas Totales"
                   value={2815930}
-                  subtitle="Nov 2025"
                   icon={<FaDollarSign />}
                   color="primary"
                   delay={0}
@@ -205,7 +204,6 @@ export default function Numeros() {
                 <DataCard
                   title="Gastos Totales"
                   value={1759490}
-                  subtitle="Nov 2025"
                   icon={<FaChartBar />}
                   color="red"
                   delay={100}
@@ -214,7 +212,6 @@ export default function Numeros() {
                 <DataCard
                   title="Utilidades"
                   value={1060830}
-                  subtitle="Nov 2025"
                   icon={<FaStar />}
                   color="green"
                   delay={200}
@@ -319,7 +316,7 @@ export default function Numeros() {
                     <div className="text-5xl font-bold text-white mb-2">
                       <AnimatedCounter end={636498} />
                     </div>
-                    <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
+                    <div className="text-white/90 mb-3">Utilidades</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
                       <div className="h-full bg-white rounded-full" style={{ width: '60%' }}></div>
                     </div>
@@ -335,7 +332,7 @@ export default function Numeros() {
                     <div className="text-5xl font-bold text-white mb-2">
                       <AnimatedCounter end={424331} />
                     </div>
-                    <div className="text-white/90 mb-3">Utilidades Noviembre 2025</div>
+                    <div className="text-white/90 mb-3">Utilidades</div>
                     <div className="h-2 bg-white/30 rounded-full overflow-hidden">
                       <div className="h-full bg-white rounded-full" style={{ width: '40%' }}></div>
                     </div>
