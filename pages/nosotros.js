@@ -265,7 +265,7 @@ export default function Nosotros() {
                     <span className="text-3xl font-bold text-secondary">17%</span>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-secondary/20 to-secondary/10 p-5 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-secondary">
+                <div className="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-primary">PGG</span>
                     <span className="text-4xl font-bold text-secondary">17%</span>
